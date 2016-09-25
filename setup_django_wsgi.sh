@@ -14,8 +14,18 @@ cd setup
 # Uncomment "LoadModule php5_module libexec/apache2/libphp5.so"
 #echo '<?php phpinfo();' > /Library/WebServer/Documents/phpinfo.php
 
-# Setup MySQL
+# Install MySQL server
+# Refer: http://dev.mysql.com/downloads/mysql/
+
+# Setup MySQL server and change password
+# Refer: https://coolestguidesontheplanet.com/get-apache-mysql-php-and-phpmyadmin-working-on-osx-10-11-el-capitan/
 #export PATH=/usr/local/mysql/bin:$PATH
+#/usr/local/mysql/bin/mysqladmin -u root -p'temppassword' password 'newpassword'
+
+# Start/Stop MySQL server
+#sudo /usr/local/mysql/support-files/mysql.server start
+#sudo /usr/local/mysql/support-files/mysql.server stop
+#sudo /usr/local/mysql/support-files/mysql.server restart
 
 # Connect PHP and MySQL
 #cd /var 
@@ -52,8 +62,17 @@ cd setup
 # Restart Apache Web Server
 #sudo apachectl restart
 
+# Install Python3.5
+sudo pip install python3.5
+
 # Install and setup Django
 pip3.5 install django
+
+# Install python mysqlclient
+# Refer: https://pypi.python.org/pypi/mysqlclient
+# Refer: http://stackoverflow.com/questions/27748556/python3-4-cant-install-mysql-python 
+#export PATH=/usr/local/mysql/bin:$PATH
+#sudo pip install mysqlclient
 
 # Create Django Project
 #django-admin startproject TaRa
@@ -61,8 +80,30 @@ pip3.5 install django
 # Setup Django Project
 #cd TaRa
 #export PYTHONPATH=/Users/chetan/anaconda/lib/python3.5
-#python3.5 manage.py migrate
+
+# Create database for Project
+#mysql -v -u root -p
+#create DATABASE TaRa;
+#use TaRa;
+#CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
+#GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost';
+#FLUSH PRIVILEGES;
+
+# Sync database schema
+#python3.5 ../manage.py migrate
 
 # Start dev server
 #python3.5 manage.py runserver
 
+# To create a new Django Application
+#cd TaRa
+#python3.5 ../manage.py startapp UserProfile
+
+# Checkpoint for database schema
+#python3.5 ../manage.py makemigrations UserProfile
+
+# Get SQL representation for databse schema
+python3.5 ../manage.py sqlmigrate UserProfile 0001
+
+# Create superuser
+python3.5 ../manage.py createsuperuser
