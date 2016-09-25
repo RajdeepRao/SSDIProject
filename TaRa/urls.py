@@ -19,7 +19,8 @@ from django.contrib import admin
 
 
 urlpatterns = [
-#    url(r'^UserProfile/', include('UserProfile.urls')),
+    url(r'^$', include('TaRa.UserProfile.urls')),
+    url(r'^UserProfile/', include('TaRa.UserProfile.urls')),
     url(r'^admin/', admin.site.urls),
 ]
 

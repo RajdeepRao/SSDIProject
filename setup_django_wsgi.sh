@@ -90,7 +90,8 @@ pip3.5 install django
 #FLUSH PRIVILEGES;
 
 # Sync database schema
-#python3.5 ../manage.py migrate
+#python3.5 ../manage.py migrate auth
+#python3.5 ../manage.py migrate --run-syncdb
 
 # Start dev server
 #python3.5 manage.py runserver
