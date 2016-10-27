@@ -1,7 +1,0 @@
-angular.module('app', []);
-
-app.controller('ctrl1', function($scope) {
-    $scope.first=1;
-    $scope.second=1;
-    
-});

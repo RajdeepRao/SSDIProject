@@ -1,8 +1,0 @@
-package com.TaRa.backend.repository;
-
-import com.TaRa.backend.Greeting;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface GreetingRepository extends JpaRepository<Greeting, Long> {
-
-}
