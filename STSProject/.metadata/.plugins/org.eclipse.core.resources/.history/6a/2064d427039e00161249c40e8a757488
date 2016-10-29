@@ -1,0 +1,55 @@
+package com.TaRa.service;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.TaRa.dao.StudentDAO;
+import com.TaRa.entity.Student;
+
+
+@Service
+public class studentService {
+	
+	@Autowired
+	private StudentDAO studentdao;
+	
+	
+	
+	public Collection<Student> findAll()
+	{
+		return studentdao.findAll();
+	}
+	
+	public Student findById(int id)
+	{
+		return studentdao.findById(id);
+	}
+	
+	public void createStudent(Student student)
+	{
+		studentdao.save(student);
+	}
+
+	
+	 /*public Collection<Student> getAllSudents(){
+		 return this.studentdao.getAllSudents();
+	 }
+	 
+	 public Student getStudentByID(int id){
+		 return this.studentdao.getStudentByID(id);
+	 }
+	 
+	 public void deleteStudentByID(int id){
+		this.studentdao.deleteStudentByID(id);
+	 }
+	 
+	 public void updateStudent(Student student){
+		this.studentdao.updateStudent(student);
+	 }
+	 
+	 public void insertStudent(Student student){
+		this.studentdao.insertStudent(student);
+	 }*/
+}

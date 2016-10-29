@@ -1,0 +1,20 @@
+package com.TaRa.controller;
+
+import java.util.Collection;
+
+import org.springframework.web.bind.annotation.RestController;
+
+import com.TaRa.entity.Student;
+import com.TaRa.service.studentService;
+
+@RestController
+
+public class studentController {
+	
+	private studentService studentservice;
+	
+	public Collection<Student> getAllSudents(){
+		 return studentservice.getAllSudents();
+	 }
+
+}

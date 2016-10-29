@@ -1,0 +1,50 @@
+package com.TaRa.entity;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class Student {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	
+	private int id;
+	private String name;
+	private String course;
+	
+	public Student(int id, String name, String course) {
+		this.id=id;
+		this.name=name;
+		this.course=course;
+	}
+	
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public String getCourse() {
+		return course;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

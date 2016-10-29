@@ -1,0 +1,13 @@
+package com.TaRa.dao;
+
+import java.util.Map;
+
+import com.TaRa.entity.Student;
+
+public class StudentDAO {
+
+	 private static Map<Integer, Student> student;
+	 
+	 
+	 
+}

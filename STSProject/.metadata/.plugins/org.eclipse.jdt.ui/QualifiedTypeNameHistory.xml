@@ -2,4 +2,21 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="com.TaRa.backend.Customer"/>
 <fullyQualifiedTypeName name="com.TaRa.backend.domain.Customer"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.integration.http.inbound.RequestMapping"/>
+<fullyQualifiedTypeName name="com.TaRa.service.studentService"/>
+<fullyQualifiedTypeName name="com.TaRa.controller.studentController"/>
+<fullyQualifiedTypeName name="com.hazelcast.concurrent.atomiclong.client.ReadRequest"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+<fullyQualifiedTypeName name="java.awt.PageAttributes.MediaType"/>
+<fullyQualifiedTypeName name="org.springframework.data.solr.core.RequestMethod"/>
+<fullyQualifiedTypeName name="io.undertow.attribute.RequestMethodAttribute"/>
+<fullyQualifiedTypeName name="org.apache.commons.compress.compressors.pack200.Pack200CompressorInputStream"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
 </qualifiedTypeNameHistroy>

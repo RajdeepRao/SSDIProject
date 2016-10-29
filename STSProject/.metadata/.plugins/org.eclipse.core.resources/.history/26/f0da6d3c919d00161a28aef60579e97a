@@ -1,0 +1,19 @@
+package com.TaRa.service;
+
+import java.util.Collection;
+
+import org.springframework.stereotype.Service;
+
+import com.TaRa.dao.StudentDAO;
+import com.TaRa.entity.Student;
+
+@Service
+public class studentService {
+	
+	private StudentDAO studentdao;
+	
+	 public Collection<Student> getAllSudents(){
+		 return studentdao.getAllSudents();
+	 }
+
+}
