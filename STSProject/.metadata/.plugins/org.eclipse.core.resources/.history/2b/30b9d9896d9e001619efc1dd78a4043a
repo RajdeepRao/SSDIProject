@@ -1,0 +1,30 @@
+#title{
+  font-family: 'Proza Libre', sans-serif;
+  background-image: url("static/images/backgroundimage6.jpg");
+  color: white;
+}
+
+#description{
+  font-family: 'Proza Libre', sans-serif;
+  background-image: url("static/images/backgroundimage5.jpg");
+  color: white;
+
+}
+#login{
+  background-image: url("static/images/backgroundimage5.jpg");
+  font-family: 'Proza Libre', sans-serif;
+  color: white !important;
+
+}
+body{
+  background-image: url("images/backgroundimage4.jpg");
+  background-repeat: no-repeat;
+}
+#modal{
+  background-image: url("images/backgroundimage4.jpg");
+  background-repeat: no-repeat;
+  font-family: 'Proza Libre', sans-serif;
+  color: #004d00;
+
+
+}
