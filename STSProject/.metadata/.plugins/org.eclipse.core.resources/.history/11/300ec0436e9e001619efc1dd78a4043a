@@ -9,7 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="indexSelfCSS.css" />
-  <link rel="shortcut icon" href="images/logo.ico" />
+  <link rel="shortcut icon" href="logo.ico" />
 </head>
 <body>
   <nav id="login" class="navbar navbar-inverse navbar-fixed-top">
