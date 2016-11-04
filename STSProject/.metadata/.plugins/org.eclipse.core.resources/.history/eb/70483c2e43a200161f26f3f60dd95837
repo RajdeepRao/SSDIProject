@@ -6,13 +6,6 @@ app.config(function($routeProvider){
     templateUrl:'landingPage.html'
   })
   .when('/dashboard',{
-    resolve: {
-      "check": function($location,$rootScope){
-          if(!$rootScope.logIn){
-            $location.path('/');
-          }
-      }
-    },
     templateUrl:'dashboard.html'
   })
   .otherwise({
@@ -20,19 +13,15 @@ app.config(function($routeProvider){
   })
 });
 
-app.controller('LogIn',function($scope,$rootScope, $location){
+app.controller('LogIn',function($scope, $location){
   $scope.email="rajdeeprrao94@gmail.com";
   $scope.password="asdf";
   $scope.username="";
-  $rootScope.logIn=false;
 
   $scope.logIn=function(email){
     if(email=="rajdeeprrao94@gmail.com"){
-        $rootScope.logIn=true;
         alert('login successful');
         getElementById('myModal').modal('hide');
-
-
     }
 
   };
