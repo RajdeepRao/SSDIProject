@@ -45,7 +45,7 @@ public class StudentService {
 	 * */
 	
 	public void updateStudent(Student student){
-		studentdao.setStudentInfoById(student.getId(),student.getFirstName(),student.getLastName(),student.getEmailId(),student.getPassword(),student.getNinerId());
+		studentdao.setStudentInfoById(student.getId(),student.getFirstName(),student.getLastName(),student.getEmailId(),student.getPassword());
 	 }
 
 	

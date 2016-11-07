@@ -1,1 +1,11 @@
 <h1>DASHBOARD</h1>
+<div ng-app="myApp">
+  <div ng-controller="listStudents">
+    <ul>
+      <h2>Scottish</h2>
+      <li ng-repeat="student in students">
+        {{student.firstName}}
+      </li>
+    </ul>
+  </div>
+</div>

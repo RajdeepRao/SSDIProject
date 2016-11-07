@@ -16,15 +16,13 @@ public class Student {
 	private String lastName;
 	private String emailId;
 	private String password;
-	private int ninerId;
 	
-	public Student(int id, String firstName,String lastName , String emailId, String password, int ninerId) {
+	public Student(int id, String firstName,String lastName , String emailId, String password) {
 		this.id=id;
 		this.firstName=firstName;
 		this.lastName=lastName;
 		this.emailId=emailId;
 		this.password=password;
-		this.ninerId=ninerId;
 	}
 	
 	public Student() {
@@ -45,10 +43,6 @@ public class Student {
 	
 	public String getEmailId() {
 		return emailId;
-	}
-	
-	public int getNinerId() {
-		return ninerId;
 	}
 	
 	public String getPassword() {
@@ -75,7 +69,4 @@ public class Student {
 		this.password = password;
 	}
 	
-	public void setNinerId(int ninerId) {
-		this.ninerId = ninerId;
-	}
 }

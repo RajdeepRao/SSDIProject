@@ -13,8 +13,8 @@ public interface StudentDAO extends JpaRepository<Student, Integer>{
 	
 	Student findById(int id);
 	@Modifying
-	@Query("update Student u set u.firstName= ?2,u.lastName= ?3, u.emailId= ?4, u.password= ?5, u.ninerId= ?6 where u.id = ?1")
-	void setStudentInfoById(int id, String firstName,String lastName , String emailId, String password, int ninerId);
+	@Query("update Student u set u.firstName= ?2,u.lastName= ?3, u.emailId= ?4, u.password= ?5 where u.id = ?1")
+	void setStudentInfoById(int id, String firstName,String lastName , String emailId, String password);
 	
 }
 
