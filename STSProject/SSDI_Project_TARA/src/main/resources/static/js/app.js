@@ -51,8 +51,25 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location){
   $rootScope.signUpSuccess=false;
 
   
-  $scope.signUpFunction=function($http){
+  $scope.signUpFunction=function(){
 	  $scope.value=5+$scope.ninerNumber;
+	  
+	  var dataObj = {
+				id : $scope.ninerNumber,
+				firstName : $scope.firstName,
+				lastName : $scope.lastName,
+				emailId : $scope.email,
+				password : $scope.password
+		};	
+	  dataObjString=JSON.stringify(dataObj);
+	  var dataJsonObj=JSON.parse(dataObjString);
+		var res = $http.put('http://localhost:8080/students/6', dataJsonObj);
+		res.success(function(data, status, headers, config) {
+			$scope.message = data;
+		});
+		res.error(function(data, status, headers, config) {
+			alert( "failure message: " + JSON.stringify({data: data}));
+		});	
 	   
   };
 
@@ -60,8 +77,13 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location){
 });
 
 app.controller('listStudents',function($scope,$http){
-  $http.get('http://localhost:8080/data.json')
+  $http.get('http://localhost:8080/data2.json')
   .success(function(response){
-    $scope.students=response.students;
+    //$scope.students=response.students;
+	 data=JSON.stringify(response);
+	 console.log(data);
+    
+	 var jsonObj=JSON.parse(data);
+	 console.log(jsonObj[0]);
   });
 });
