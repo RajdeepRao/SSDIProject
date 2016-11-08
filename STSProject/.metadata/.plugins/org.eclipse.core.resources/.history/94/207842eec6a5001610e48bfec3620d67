@@ -20,7 +20,7 @@ app.config(function($routeProvider){
   })
 });
 
-app.controller('LogIn',function($scope,$rootScope, $location, $http){
+app.controller('LogIn',function($scope,$rootScope, $location){
   $scope.email="rajdeeprrao94@gmail.com";
   $scope.password="asdf";
   $scope.username="";
@@ -28,29 +28,21 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http){
 
   $scope.logIn=function(email,password){
 	  
-	  $http.get('http://localhost:8080/students')
-	  .success(function(response){
-	    //$scope.students=response.students;
-		 data=JSON.stringify(response);
-		 var jsonObj=JSON.parse(data);
-		 for(i=0;i<jsonObj.length;i++){
-			 console.log(jsonObj[i].emailId);
-			 console.log(jsonObj[i].password);
-			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
-				 $rootScope.logIn=true;
-			        alert('login successful');
-			        getElementById('myModal').modal('hide');
-			 }
-				 
-		 }
-		 
-	  });
+	  /*$http.get('http://localhost:8080/students')
+	    .success(function(response){
+	      //$scope.students=response.students;
+	  	 data=JSON.stringify(response);
+	  	 console.log(data);
+	      
+	  	 var jsonObj=JSON.parse(data);
+	  	 console.log(jsonObj[0]);
+	    });*/
 	  
-    /*if(email=="rajdeeprrao94@gmail.com"){
+    if(email=="rajdeeprrao94@gmail.com"){
         $rootScope.logIn=true;
         alert('login successful');
         getElementById('myModal').modal('hide');
-    }*/
+    }
     
 
   };

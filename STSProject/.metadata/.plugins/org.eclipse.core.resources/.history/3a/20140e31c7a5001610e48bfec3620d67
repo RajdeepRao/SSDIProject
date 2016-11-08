@@ -36,11 +36,11 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http){
 		 for(i=0;i<jsonObj.length;i++){
 			 console.log(jsonObj[i].emailId);
 			 console.log(jsonObj[i].password);
-			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
+			 /*if(jsonObj[i].emailId==email && jsonObj[i].password=password){
 				 $rootScope.logIn=true;
 			        alert('login successful');
 			        getElementById('myModal').modal('hide');
-			 }
+			 }*/
 				 
 		 }
 		 
