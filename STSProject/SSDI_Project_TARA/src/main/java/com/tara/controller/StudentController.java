@@ -3,7 +3,6 @@ package com.tara.controller;
 import java.util.Collection;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,19 +25,14 @@ public class StudentController {
 		 return studentservice.findAll();
 	 }
 	
-	@RequestMapping(value="/{id}", method = RequestMethod.GET)
-	public Student findById(@PathVariable("id") int id){
-		 return studentservice.findById(id);
+	@RequestMapping(value="/{ninerId}", method = RequestMethod.GET)
+	public Student findById(@PathVariable("ninerId") int ninerId){
+		 return studentservice.findByninerId(ninerId);
 	 }
 	
-	@RequestMapping(value="/{id}", method = RequestMethod.PUT)
+	@RequestMapping(method = RequestMethod.PUT)
 	public void createStudent(@RequestBody Student student){
 		 studentservice.createStudent(student);
-	 }
-	
-	@RequestMapping(method = RequestMethod.PUT, consumes= MediaType.APPLICATION_JSON_VALUE)
-	public void updateStudent(@RequestBody Student student){
-		this.studentservice.updateStudent(student);
 	 }
 	
 	/*@RequestMapping(value="/{id}", method = RequestMethod.DELETE)

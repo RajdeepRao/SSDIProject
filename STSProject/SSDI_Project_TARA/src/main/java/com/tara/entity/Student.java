@@ -1,36 +1,34 @@
 package com.tara.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Student {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	
-	private int id;
+	@NotNull(message = "Missing first name")
 	private String firstName;
+	@NotNull(message = "Missing last name")
 	private String lastName;
+	@NotNull(message = "Missing email")
 	private String emailId;
+	@NotNull(message = "Missing password")
 	private String password;
+	@Id
+	@NotNull
+	private int ninerId;
 	
-	public Student(int id, String firstName,String lastName , String emailId, String password) {
-		this.id=id;
+	public Student(String firstName,String lastName , String emailId, String password, int ninerId) {
 		this.firstName=firstName;
 		this.lastName=lastName;
 		this.emailId=emailId;
 		this.password=password;
+		this.ninerId=ninerId;
 	}
 	
 	public Student() {
 		// TODO Auto-generated constructor stub
-	}
-	
-	public int getId() {
-		return id;
 	}
 	
 	public String getFirstName() {
@@ -49,8 +47,8 @@ public class Student {
 		return password;
 	}
 	
-	public void setId(int id) {
-		this.id = id;
+	public int getninerId() {
+		return ninerId;
 	}
 	
 	public void setFirstName(String firstName) {
@@ -69,4 +67,7 @@ public class Student {
 		this.password = password;
 	}
 	
+	public void ninerId(int ninerId) {
+		this.ninerId = ninerId;
+	}
 }

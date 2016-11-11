@@ -60,6 +60,12 @@
           <div class="modal-body">
               <form ng-controller="LogIn" class="form-horizontal">
                   <div class="form-group">
+                    <label class="control-label col-sm-2" for="Role">Role:</label>
+                    <div class="col-sm-10">
+                      <input type="role" class="form-control" id="role" placeholder="Student/Professor" ng-model="role">
+                    </div>
+                    </div>
+                  <div class="form-group">
                     <label class="control-label col-sm-2" for="email">Email:</label>
                     <div class="col-sm-10">
                       <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="email">
@@ -143,7 +149,7 @@
                   </div>
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button type="submit" ng-click="signUpFunction()" class="btn btn-default">Submit</button>
+                      <button type="submit" ng-click="signUpFunction()" class="btn btn-default" data-dismiss="modal">Submit</button>
                       <p>{{value}}</p>
                    		<div ng-controller="listStudents">
 					    <ul>

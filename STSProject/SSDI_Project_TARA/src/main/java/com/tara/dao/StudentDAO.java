@@ -11,10 +11,10 @@ import com.tara.entity.Student;
 
 public interface StudentDAO extends JpaRepository<Student, Integer>{
 	
-	Student findById(int id);
+	Student findByninerId(int ninerId);
 	@Modifying
-	@Query("update Student u set u.firstName= ?2,u.lastName= ?3, u.emailId= ?4, u.password= ?5 where u.id = ?1")
-	void setStudentInfoById(int id, String firstName,String lastName , String emailId, String password);
+	@Query("update Student u set u.firstName= ?2,u.lastName= ?3, u.emailId= ?4, u.password= ?5 where u.ninerId = ?1")
+	void setStudentInfoByninerId(int ninerId, String firstName,String lastName , String emailId, String password);
 	
 }
 

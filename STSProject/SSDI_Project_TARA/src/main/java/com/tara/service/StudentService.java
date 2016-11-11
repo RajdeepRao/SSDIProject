@@ -22,9 +22,9 @@ public class StudentService {
 		return studentdao.findAll();
 	}
 	
-	public Student findById(int id)
+	public Student findByninerId(int ninerId)
 	{
-		return studentdao.findById(id);
+		return studentdao.findByninerId(ninerId);
 	}
 	
 	public void createStudent(Student student)
@@ -45,7 +45,7 @@ public class StudentService {
 	 * */
 	
 	public void updateStudent(Student student){
-		studentdao.setStudentInfoById(student.getId(),student.getFirstName(),student.getLastName(),student.getEmailId(),student.getPassword());
+		studentdao.setStudentInfoByninerId(student.getninerId(),student.getFirstName(),student.getLastName(),student.getEmailId(),student.getPassword());
 	 }
 
 	

@@ -24,27 +24,55 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http){
   $scope.email="rajdeeprrao94@gmail.com";
   $scope.password="asdf";
   $scope.username="";
+  $scope.role;
   $rootScope.logIn=false;
 
   $scope.logIn=function(email,password){
 	  
-	  $http.get('http://localhost:8080/students')
-	  .success(function(response){
-	    //$scope.students=response.students;
-		 data=JSON.stringify(response);
-		 var jsonObj=JSON.parse(data);
-		 for(i=0;i<jsonObj.length;i++){
-			 console.log(jsonObj[i].emailId);
-			 console.log(jsonObj[i].password);
-			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
-				 $rootScope.logIn=true;
-			        alert('login successful');
-			        getElementById('myModal').modal('hide');
-			 }
-				 
-		 }
-		 
-	  });
+	  	if($scope.role=="Student" || $scope.role=="student" ){
+	  		$http.get('http://localhost:8080/students')
+	  	  .success(function(response){
+	  	    //$scope.students=response.students;
+	  		 data=JSON.stringify(response);
+	  		 var jsonObj=JSON.parse(data);
+	  		 for(i=0;i<jsonObj.length;i++){
+	  			 console.log(jsonObj[i].emailId);
+	  			 console.log(jsonObj[i].password);
+	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
+	  				 $rootScope.logIn=true;
+	  			        alert('login successful');
+	  			        getElementById('myModal').modal('hide');
+	  			 }
+	  				 
+	  		 }
+	  		 
+	  	  });
+	  		
+	  	}
+	  	
+	  	
+	  	if($scope.role=="Professor" || $scope.role=="professor" ){
+	  		$http.get('http://localhost:8080/professors')
+	  	  .success(function(response){
+	  	    //$scope.students=response.students;
+	  		 data=JSON.stringify(response);
+	  		 var jsonObj=JSON.parse(data);
+	  		 for(i=0;i<jsonObj.length;i++){
+	  			 console.log(jsonObj[i].emailId);
+	  			 console.log(jsonObj[i].password);
+	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
+	  				 $rootScope.logIn=true;
+	  			        alert('login successful');
+	  			        getElementById('myModal').modal('hide');
+	  			 }
+	  				 
+	  		 }
+	  		 
+	  	  });
+	  		
+	  	}
+
+	  
 	  
     /*if(email=="rajdeeprrao94@gmail.com"){
         $rootScope.logIn=true;
@@ -75,21 +103,44 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location){
 	  $scope.value=5+$scope.ninerNumber;
 	  
 	  var dataObj = {
-				id : $scope.ninerNumber,
 				firstName : $scope.firstName,
 				lastName : $scope.lastName,
 				emailId : $scope.email,
-				password : $scope.password
+				password : $scope.password,
+				ninerId : $scope.ninerNumber
 		};	
 	  dataObjString=JSON.stringify(dataObj);
 	  var dataJsonObj=JSON.parse(dataObjString);
-		var res = $http.put('http://localhost:8080/students/6', dataJsonObj);
-		res.success(function(data, status, headers, config) {
-			$scope.message = data;
-		});
-		res.error(function(data, status, headers, config) {
-			alert( "failure message: " + JSON.stringify({data: data}));
-		});	
+		
+	  	if($scope.role=="Student" || $scope.role=="student" ){
+	  		
+	  		var res = $http.put('http://localhost:8080/students', dataJsonObj);
+			console.log($scope.ninerNumber);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});	
+			 $rootScope.logIn=true;
+
+	  	}
+	  	else if($scope.role=="Professor"|| $scope.role=="professor"){
+	  		
+	  		var res = $http.put('http://localhost:8080/professors', dataJsonObj);
+			console.log($scope.ninerNumber);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});	
+			 $rootScope.logIn=true;
+
+	  	}
+	  	else{
+	  		alert("Invalid role");
+	  	}
 	   
   };
 
@@ -99,7 +150,7 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location){
 app.controller('listStudents',function($scope,$http){
   $http.get('http://localhost:8080/data2.json')
   .success(function(response){
-    //$scope.students=response.students;
+    $scope.students=response.students;
 	 data=JSON.stringify(response);
 	 console.log(data);
     
