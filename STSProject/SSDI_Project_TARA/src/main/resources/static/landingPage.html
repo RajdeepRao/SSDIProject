@@ -1,4 +1,3 @@
-  <h1><a href="#/dashboard">Hello User</a></h1>
 
     <nav id="login" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -12,10 +11,17 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
 
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right" ng-show="!logIn">
             <li id="signUp"><a href="" data-toggle="modal" data-target="#signUpModal"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
             <li id="logIn"><a href="" data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
           </ul>
+          
+          <ul class="nav navbar-nav navbar-right" ng-show="logIn">
+          	<li><a href="#/dashboard" data-toggle="modal" data-target="">DashBoard</a></li>
+          	<li ng-controller="LogIn"><a href="" data-toggle="modal" data-target="">Welcome {{username}}</a></li>
+            <li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+          </ul>
+          
         </div>
       </div>
     </nav>
@@ -79,8 +85,8 @@
                   </div>
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
-                      <button id="myModal" type="submit" class="btn btn-default" ng-click="logIn(email,password)"  data-dismiss="modal">Submit</button>
-
+                      <button id="myModal" type="submit" class="btn btn-default" ng-click="logIn(email,password)" data-dismiss="modal" >Submit</button>
+						
                     </div>
                   </div>
                 </form>

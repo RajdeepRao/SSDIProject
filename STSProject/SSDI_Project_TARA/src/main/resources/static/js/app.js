@@ -1,4 +1,4 @@
-var app = angular.module("myApp",["ngRoute"]);
+var app = angular.module("myApp",["ngRoute", "ngCookies"]);
 
 app.config(function($routeProvider){
   $routeProvider
@@ -20,10 +20,10 @@ app.config(function($routeProvider){
   })
 });
 
-app.controller('LogIn',function($scope,$rootScope, $location, $http){
-  $scope.email="rajdeeprrao94@gmail.com";
-  $scope.password="asdf";
-  $scope.username="";
+app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
+  $scope.email;
+  $scope.password;
+  $scope.username;
   $scope.role;
   $rootScope.logIn=false;
 
@@ -39,14 +39,21 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http){
 	  			 console.log(jsonObj[i].emailId);
 	  			 console.log(jsonObj[i].password);
 	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
-	  				 $rootScope.logIn=true;
+		  				$rootScope.logIn=true;
+		  				console.log(jsonObj[i].firstName);
+		  				$rootScope.username=jsonObj[i].firstName;
+		  				console.log($scope.username);
 	  			        alert('login successful');
 	  			        getElementById('myModal').modal('hide');
+	  			        
 	  			 }
 	  				 
 	  		 }
-	  		 
+	  		
+	  		
+	  		
 	  	  });
+
 	  		
 	  	}
 	  	
@@ -62,6 +69,7 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http){
 	  			 console.log(jsonObj[i].password);
 	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
 	  				 $rootScope.logIn=true;
+	  				$rootScope.username=jsonObj[i].firstName;
 	  			        alert('login successful');
 	  			        getElementById('myModal').modal('hide');
 	  			 }
@@ -71,21 +79,13 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http){
 	  	  });
 	  		
 	  	}
-
-	  
-	  
-    /*if(email=="rajdeeprrao94@gmail.com"){
-        $rootScope.logIn=true;
-        alert('login successful');
-        getElementById('myModal').modal('hide');
-    }*/
     
 
   };
 
 });
 
-app.controller('SignUp',function($scope, $http, $rootScope, $location){
+app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies){
 	
   $scope.role;
   $scope.firstName;
@@ -118,11 +118,14 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location){
 			console.log($scope.ninerNumber);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
+				
+				
 			});
 			res.error(function(data, status, headers, config) {
 				alert( "failure message: " + JSON.stringify({data: data}));
 			});	
-			 $rootScope.logIn=true;
+			$rootScope.username=$scope.firstName;
+			$rootScope.logIn=true;
 
 	  	}
 	  	else if($scope.role=="Professor"|| $scope.role=="professor"){
@@ -131,11 +134,13 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location){
 			console.log($scope.ninerNumber);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
+				
 			});
 			res.error(function(data, status, headers, config) {
 				alert( "failure message: " + JSON.stringify({data: data}));
 			});	
-			 $rootScope.logIn=true;
+			$rootScope.username=$scope.firstName;
+			$rootScope.logIn=true;
 
 	  	}
 	  	else{
@@ -152,10 +157,18 @@ app.controller('listStudents',function($scope,$http){
   .success(function(response){
     $scope.students=response.students;
 	 data=JSON.stringify(response);
-	 console.log(data);
+	 
     
 	 var jsonObj=JSON.parse(data);
 	 for(i=0;i<jsonObj.length;i++)
-	 console.log(jsonObj[i].firstName);
+	 console.log(jsaonObj[i].firstName);
   });
+});
+
+
+app.controller('SignOut', function($scope,$rootScope){
+	$scope.signout=function(){
+		$rootScope.logIn=false;
+		console.log($rootScope.logIn);
+	};
 });
