@@ -1,0 +1,73 @@
+<nav id="login" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/"><img src="images/logo.gif" height="30" width="35"> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+          <ul class="nav navbar-nav navbar-right" ng-show="logIn">
+          	<li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="#/" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <br><br><br><br>
+
+
+	<div class="container-fluid">
+		<div class="jumbotron">
+		  <div class="container text-center">
+		    <h1>Welcome {{username}}</h1>      
+		    <p>This is your Dashboard</p>
+		  </div>
+		</div>
+	</div>
+	
+   <br><br><br><br>
+	
+	<div class="container">
+	<div ng-controller="positions" class="row" >
+	    
+	    <div class="col-md-4" ng-repeat-start="p in pos">	        
+			<div class="panel panel-primary" >
+	        <div class="panel-heading">{{p.subject}}</div>
+	        <div class="panel-body">{{p.firstName}}</div>
+	        <div class="panel-body">{{p.lastName}}</div>
+	        <div class="panel-body">{{p.emailId}}</div>
+	        <div class="panel-body">{{p.description}}</div>
+	        <div class="panel-body" style="text-align:center"><button class="progress-button" data-style="rotate-angle-top" data-perspective data-horizontal>Submit</button></div>
+	            
+	    	</div> 
+		</div>
+		<div class="clearfix" ng-if="$index%3==2"></div>
+		<div ng-repeat-end=""></div>
+	    
+	    
+	</div>
+
+	<script src="js/classie.js"></script>
+		<script src="js/progressButton.js"></script>
+		<script>
+			[].slice.call( document.querySelectorAll( 'button.progress-button' ) ).forEach( function( bttn ) {
+				new ProgressButton( bttn, {
+					callback : function( instance ) {
+						var progress = 0,
+							interval = setInterval( function() {
+								progress = Math.min( progress + Math.random() * 0.1, 1 );
+								instance._setProgress( progress );
+
+								if( progress === 1 ) {
+									instance._stop(1);
+									clearInterval( interval );
+								}
+							}, 200 );
+					}
+				} );
+			} );
+		</script>

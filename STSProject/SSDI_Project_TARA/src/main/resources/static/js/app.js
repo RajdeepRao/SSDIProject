@@ -20,13 +20,14 @@ app.config(function($routeProvider){
   })
 });
 
+
 app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
-  $scope.email;
-  $scope.password;
+  $scope.email="rrao6@uncc.edu";
+  $scope.password="rajdeep1994";
   $scope.username;
   $scope.role;
   $rootScope.logIn=false;
-
+  
   $scope.logIn=function(email,password){
 	  
 	  	if($scope.role=="Student" || $scope.role=="student" ){
@@ -43,8 +44,11 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
 		  				console.log(jsonObj[i].firstName);
 		  				$rootScope.username=jsonObj[i].firstName;
 		  				console.log($scope.username);
-	  			        alert('login successful');
+		  				$scope.myUrl = $location.path('/dashboard');
+		  				console.log($scope.myUrl);
+		  				alert('login successful');
 	  			        getElementById('myModal').modal('hide');
+	  			        
 	  			        
 	  			 }
 	  				 
@@ -72,6 +76,8 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
 	  				$rootScope.username=jsonObj[i].firstName;
 	  			        alert('login successful');
 	  			        getElementById('myModal').modal('hide');
+	  			        $scope.myUrl = $location.path('/dashboardProf');
+
 	  			 }
 	  				 
 	  		 }
@@ -96,11 +102,8 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies)
   $scope.value=5;
   $scope.students;
 
-  $rootScope.signUpSuccess=false;
-
   
   $scope.signUpFunction=function(){
-	  $scope.value=5+$scope.ninerNumber;
 	  
 	  var dataObj = {
 				firstName : $scope.firstName,
@@ -115,7 +118,6 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies)
 	  	if($scope.role=="Student" || $scope.role=="student" ){
 	  		
 	  		var res = $http.put('http://localhost:8080/students', dataJsonObj);
-			console.log($scope.ninerNumber);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
 				
@@ -152,23 +154,25 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies)
 
 });
 
-app.controller('listStudents',function($scope,$http){
-  $http.get('http://localhost:8080/data2.json')
-  .success(function(response){
-    $scope.students=response.students;
-	 data=JSON.stringify(response);
-	 
-    
-	 var jsonObj=JSON.parse(data);
-	 for(i=0;i<jsonObj.length;i++)
-	 console.log(jsaonObj[i].firstName);
-  });
-});
-
-
-app.controller('SignOut', function($scope,$rootScope){
+app.controller('SignOut', function($scope,$rootScope,$location){
 	$scope.signout=function(){
-		$rootScope.logIn=false;
 		console.log($rootScope.logIn);
+		$rootScope.logIn=false;
 	};
 });
+
+app.controller('positions', function($scope,$http){
+	$scope.name="asdasd";
+	$http.get('http://localhost:8080/positions')
+	  .success(function(response){
+	    //$scope.students=response.students;
+		 data=JSON.stringify(response);
+		 var jsonObj=JSON.parse(data);
+		 $scope.pos=jsonObj;
+		 for(i=0;i<jsonObj.length;i++){
+			 console.log($scope.pos[i]);
+		 }
+		 
+	  });	 
+});
+
