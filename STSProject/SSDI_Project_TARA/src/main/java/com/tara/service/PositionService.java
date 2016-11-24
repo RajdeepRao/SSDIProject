@@ -30,10 +30,15 @@ public class PositionService {
 	{
 		positiondao.save(position);
 	}
+
+	public void deletePositionByID(int id) {
+		this.positiondao.deleteByid(id);
+		
+	}
 	
 	
-	/*
-	 * public Student(int id, String firstName,String lastName , String emailId, String password, int ninerId) {
+	
+	 /* public Student(int id, String firstName,String lastName , String emailId, String password, int ninerId) {
 		this.id=id;
 		this.firstName=firstName;
 		this.lastName=lastName;

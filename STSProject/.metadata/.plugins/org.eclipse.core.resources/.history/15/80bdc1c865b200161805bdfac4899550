@@ -1,0 +1,105 @@
+<nav id="login" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#/"><img src="images/logo.gif" height="30" width="35"> </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+          <ul class="nav navbar-nav navbar-right" ng-show="logIn">
+          	<li id="createPos"><a href="" data-toggle="modal" data-target="#createPositionModal"><span class="glyphicon glyphicon-upload"></span> Create Position</a></li>
+          	<li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="#/" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <br><br><br><br>
+
+
+	<div class="container-fluid">
+		<div class="jumbotron">
+		  <div class="container text-center">
+		    <h1>Welcome {{username}}</h1>      
+		    <p>This is your Dashboard</p>
+		  </div>
+		</div>
+	</div>
+	
+   <br><br><br><br>
+	
+	<div class="container">
+	<div ng-controller="positions" class="row" >
+	    
+	    <div class="col-md-4" ng-repeat-start="p in pos">	        
+			<div class="panel panel-primary" >
+	        <div class="panel-heading">{{p.subject}}</div>
+	        <div class="panel-body">Position id:<span ng-model="tempId"> {{p.id}}</span></div>
+	        <div class="panel-body">Professor Name: {{p.firstName}} {{p.lastName}}</div>
+	        <div class="panel-body">Position: {{p.position}}</div>
+	        <div class="panel-body">Professor EmailId: {{p.emailId}}</div>
+	        <div class="panel-body">Position Description: {{p.description}}</div>
+	        <div class="panel-body"><button id="delete" type="button" class="btn btn-primary btn-lg btn-block" ng-if="p.ninerId==userNinerId" ng-click="deletePos(tempId)">Delete</button></div>
+	            
+	    	</div> 
+		</div>
+		<div class="clearfix" ng-if="$index%3==2"></div>
+		<div ng-repeat-end=""></div>
+	    
+	    
+	</div>
+	</div>
+	
+	<div class="container">
+    <!-- Modal -->
+    <div class="modal fade" id="createPositionModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div id="modal" class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Create Position</h4>
+          </div>
+          <div class="modal-body">
+              <form ng-controller="createPos" class="form-horizontal">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="Position">Position:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="position" placeholder="Teaching/Research Assistant" ng-model="position">
+                    </div>
+                    </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="subject">Subject:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="subject" placeholder="Enter Subject" ng-model="subject">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="description">Description:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="PosDescription" placeholder="Enter description" ng-model="description">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button id="createPositionModal" type="submit" class="btn btn-default" data-dismiss="modal" ng-click="createPosition()" >Submit</button>
+                    </div>
+                  </div>	
+                </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+	</div>
+	
+	
+	

@@ -1,5 +1,7 @@
 package com.tara.dao;
 
+import javax.transaction.Transactional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,6 +12,10 @@ import com.tara.entity.Position;
 public interface PositionDAO extends JpaRepository<Position, Integer>{
 	
 	Position findById(int Id);
+
+	
+    @Transactional
+    void deleteByid(int id);
 }
 
 

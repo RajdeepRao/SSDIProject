@@ -1,0 +1,273 @@
+var app = angular.module("myApp",["ngRoute", "ngCookies"]);
+
+app.config(function($routeProvider){
+  $routeProvider
+  .when('/',{
+    templateUrl:'landingPage.html'
+  })
+  .when('/dashboard',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'dashboard.html'
+  })
+  .when('/dashboardProf',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'dashboardProf.html'
+  })
+  .otherwise({
+    redirectTo: '/'
+  })
+});
+
+
+app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookieStore,$cookies){
+  $scope.email="hariniramapa@uncc.edu";
+  $scope.password="hariniuncc";
+  $scope.username;
+  $scope.role="Professor";
+  
+  
+  $scope.logIn=function(email,password){
+	  
+	  	if($scope.role=="Student" || $scope.role=="student" ){
+	  		$http.get('http://localhost:8080/students')
+	  	  .success(function(response){
+	  	    //$scope.students=response.students;
+	  		 data=JSON.stringify(response);
+	  		 var jsonObj=JSON.parse(data);
+	  		 for(i=0;i<jsonObj.length;i++){
+	  			 console.log(jsonObj[i].emailId);
+	  			 console.log(jsonObj[i].password);
+	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
+		  				
+		  				console.log(jsonObj[i].firstName);
+		  				$cookieStore.put('firstName',jsonObj[i].firstName);
+		  				$cookieStore.put('lastName',jsonObj[i].lastName);
+		  				$cookieStore.put('ninerId',jsonObj[i].ninerId);
+		  				$cookieStore.put('emailId',jsonObj[i].emailId);
+		  				$cookieStore.put('role',$scope.role);
+		  				$cookieStore.put('logInStatus',true);
+		  				$rootScope.logIn=$cookieStore.get('logInStatus');
+		  				$rootScope.username=jsonObj[i].firstName;
+		  				$rootScope.userLastName=jsonObj[i].lastName;
+		  				$rootScope.userNinerId=jsonObj[i].ninerId;
+		  				$rootScope.userEmailId=jsonObj[i].emailId;
+		  				$rootScope.userRole=$scope.role;
+		  				
+		  				$scope.myUrl = $location.path('/dashboard');
+		  				console.log($scope.myUrl);
+		  				alert('login successful');
+	  			        getElementById('myModal').modal('hide');
+	  			        
+	  			        
+	  			 }
+	  				 
+	  		 }
+	  		
+	  		
+	  		
+	  	  });
+
+	  		
+	  	}
+	  	
+	  	
+	  	if($scope.role=="Professor" || $scope.role=="professor" ){
+	  		$http.get('http://localhost:8080/professors')
+	  	  .success(function(response){
+	  	    //$scope.students=response.students;
+	  		 data=JSON.stringify(response);
+	  		 var jsonObj=JSON.parse(data);
+	  		 for(i=0;i<jsonObj.length;i++){
+	  			 console.log(jsonObj[i].emailId);
+	  			 console.log(jsonObj[i].password);
+	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
+	  				 
+	  				$cookieStore.put('firstName',jsonObj[i].firstName);
+	  				$cookieStore.put('lastName',jsonObj[i].lastName);
+	  				$cookieStore.put('ninerId',jsonObj[i].ninerId);
+	  				$cookieStore.put('emailId',jsonObj[i].emailId);
+	  				$cookieStore.put('role',$scope.role);
+	  				$cookieStore.put('logInStatus',true);
+	  				
+	  				$rootScope.logIn=$cookieStore.get('logInStatus');
+	  				$rootScope.username=jsonObj[i].firstName;
+	  				$rootScope.userLastName=jsonObj[i].lastName;
+	  				$rootScope.userNinerId=jsonObj[i].ninerId;
+	  				$rootScope.userEmailId=jsonObj[i].emailId;
+	  				$rootScope.userRole=$scope.role
+	  				
+	  				$scope.myUrl = $location.path('/dashboardProf');
+	  			        alert('login successful');
+	  			        getElementById('myModal').modal('hide');
+	  			        $scope.myUrl = $location.path('/dashboardProf');
+
+	  			 }
+	  				 
+	  		 }
+	  		 
+	  	  });
+	  		
+	  	}
+    
+
+  };
+
+});
+
+app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookieStore){
+	
+  $scope.role;
+  $scope.firstName;
+  $scope.lastName;
+  $scope.ninerNumber;
+  $scope.email;
+  $scope.password;
+  $scope.value=5;
+  $scope.students;
+
+  
+  $scope.signUpFunction=function(){
+	  
+	  var dataObj = {
+				firstName : $scope.firstName,
+				lastName : $scope.lastName,
+				emailId : $scope.email,
+				password : $scope.password,
+				ninerId : $scope.ninerNumber
+		};	
+	  dataObjString=JSON.stringify(dataObj);
+	  var dataJsonObj=JSON.parse(dataObjString);
+		
+	  	if($scope.role=="Student" || $scope.role=="student" ){
+	  		
+	  		var res = $http.put('http://localhost:8080/students', dataJsonObj);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+				$scope.myUrl = $location.path('/dashboard');
+				
+				
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});	
+			$rootScope.username=$scope.firstName;
+			$cookieStore.put('logInStatus',true);
+			$rootScope.logIn=$cookieStore.get('logInStatus');
+
+	  	}
+	  	else if($scope.role=="Professor"|| $scope.role=="professor"){
+	  		
+	  		var res = $http.put('http://localhost:8080/professors', dataJsonObj);
+			console.log($scope.ninerNumber);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+				$scope.myUrl = $location.path('/dashboardProf');
+				
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});	
+			$rootScope.username=$scope.firstName;
+			
+			$cookieStore.put('logInStatus',true);
+			$rootScope.logIn=$cookieStore.get('logInStatus');
+
+	  	}
+	  	else{
+	  		alert("Invalid role");
+	  	}
+	   
+  };
+
+
+});
+
+app.controller('SignOut', function($scope,$rootScope,$location){
+	$scope.signout=function(){
+		console.log($rootScope.logIn);
+		$rootScope.logIn=false;
+		$cookieStore.put('logInStatus',false);
+		$rootScope.logIn=$cookieStore.get('logInStatus');
+		$scope.myUrl = $location.path('/');
+	};
+});
+
+app.controller('positions', function($scope,$http){
+	$scope.name="asdasd";
+	$http.get('http://localhost:8080/positions')
+	  .success(function(response){
+	    //$scope.students=response.students;
+		 data=JSON.stringify(response);
+		 var jsonObj=JSON.parse(data);
+		 $scope.pos=jsonObj;
+		 
+		 for(i=0;i<jsonObj.length;i++){
+			 console.log($scope.pos[i].id);
+		 }
+		 
+	  });	 
+	
+	$scope.deletePos=function(tempId){
+		$scope.temp=tempId;
+		var res = $http.delete('http://localhost:8080/positions/?temp='+tempId);
+		res.success(function(data, status, headers, config) {
+			$scope.message = data;
+		});
+		res.error(function(data, status, headers, config) {
+			alert( "failure message: " + JSON.stringify({data: data}));
+		});	
+		
+	};
+});
+
+app.controller('createPos',function($scope, $http, $rootScope, $location, $cookies){
+	
+	  $scope.position;
+	  $scope.description;
+	  $scope.subject;
+		
+
+	  
+	  $scope.createPosition=function(){
+		  
+		  var dataObj = {
+					ninerId : $rootScope.userNinerId,
+					emailId : $rootScope.userEmailId,
+					firstName : $rootScope.username,
+					lastName : $rootScope.userLastName,
+					position : $scope.position,
+					subject : $scope.subject,
+					description : $scope.description
+			};	
+		  dataObjString=JSON.stringify(dataObj);
+		  var dataJsonObj=JSON.parse(dataObjString);
+			
+		  	
+		  		
+		  		var res = $http.put('http://localhost:8080/positions', dataJsonObj);
+				res.success(function(data, status, headers, config) {
+					$scope.message = data;
+					
+					
+				});
+				res.error(function(data, status, headers, config) {
+					alert( "failure message: " + JSON.stringify({data: data}));
+				});	
+		  	
+	  };
+
+
+});
+

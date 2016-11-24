@@ -37,12 +37,13 @@
 	    
 	    <div class="col-md-4" ng-repeat-start="p in pos">	        
 			<div class="panel panel-primary" >
-	        <div class="panel-heading">{{p.subject}}</div>
-	        <div class="panel-body">{{p.firstName}}</div>
-	        <div class="panel-body">{{p.lastName}}</div>
-	        <div class="panel-body">{{p.emailId}}</div>
-	        <div class="panel-body">{{p.description}}</div>
-	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block">Apply</button></div>
+	        <div class="panel-heading"><b>{{p.subject}}</b></div>
+	        <div class="panel-body"><b>Position id</b>: {{p.id}}</div>
+	        <div class="panel-body"><b>Professor Name</b>: {{p.firstName}} {{p.lastName}}</div>
+	        <div class="panel-body"><b>Position</b>: {{p.position}}</div>
+	        <div class="panel-body"><b>Professor EmailId</b>: {{p.emailId}}</div>
+	        <div class="panel-body"><b>Position Description</b>: {{p.description}} </div>
+	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-show="!check(p.id)" ng-click="apply(p.id,p.subject)">Apply</button></div>
 	            
 	    	</div> 
 		</div>

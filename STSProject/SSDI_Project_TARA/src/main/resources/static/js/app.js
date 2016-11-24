@@ -15,18 +15,28 @@ app.config(function($routeProvider){
     },
     templateUrl:'dashboard.html'
   })
+  .when('/dashboardProf',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'dashboardProf.html'
+  })
   .otherwise({
     redirectTo: '/'
   })
 });
 
 
-app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
-  $scope.email="rrao6@uncc.edu";
-  $scope.password="rajdeep1994";
+app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookieStore,$cookies){
+  $scope.email="hariniramapa@uncc.edu";
+  $scope.password="hariniuncc";
   $scope.username;
-  $scope.role;
-  $rootScope.logIn=false;
+  $scope.role="Professor";
+  
   
   $scope.logIn=function(email,password){
 	  
@@ -40,10 +50,21 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
 	  			 console.log(jsonObj[i].emailId);
 	  			 console.log(jsonObj[i].password);
 	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
-		  				$rootScope.logIn=true;
+		  				
 		  				console.log(jsonObj[i].firstName);
+		  				$cookieStore.put('firstName',jsonObj[i].firstName);
+		  				$cookieStore.put('lastName',jsonObj[i].lastName);
+		  				$cookieStore.put('ninerId',jsonObj[i].ninerId);
+		  				$cookieStore.put('emailId',jsonObj[i].emailId);
+		  				$cookieStore.put('role',$scope.role);
+		  				$cookieStore.put('logInStatus',true);
+		  				$rootScope.logIn=$cookieStore.get('logInStatus');
 		  				$rootScope.username=jsonObj[i].firstName;
-		  				console.log($scope.username);
+		  				$rootScope.userLastName=jsonObj[i].lastName;
+		  				$rootScope.userNinerId=jsonObj[i].ninerId;
+		  				$rootScope.userEmailId=jsonObj[i].emailId;
+		  				$rootScope.userRole=$scope.role;
+		  				
 		  				$scope.myUrl = $location.path('/dashboard');
 		  				console.log($scope.myUrl);
 		  				alert('login successful');
@@ -72,8 +93,22 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
 	  			 console.log(jsonObj[i].emailId);
 	  			 console.log(jsonObj[i].password);
 	  			 if(jsonObj[i].emailId==email && jsonObj[i].password==password){
-	  				 $rootScope.logIn=true;
+	  				 
+	  				$cookieStore.put('firstName',jsonObj[i].firstName);
+	  				$cookieStore.put('lastName',jsonObj[i].lastName);
+	  				$cookieStore.put('ninerId',jsonObj[i].ninerId);
+	  				$cookieStore.put('emailId',jsonObj[i].emailId);
+	  				$cookieStore.put('role',$scope.role);
+	  				$cookieStore.put('logInStatus',true);
+	  				
+	  				$rootScope.logIn=$cookieStore.get('logInStatus');
 	  				$rootScope.username=jsonObj[i].firstName;
+	  				$rootScope.userLastName=jsonObj[i].lastName;
+	  				$rootScope.userNinerId=jsonObj[i].ninerId;
+	  				$rootScope.userEmailId=jsonObj[i].emailId;
+	  				$rootScope.userRole=$scope.role
+	  				
+	  				$scope.myUrl = $location.path('/dashboardProf');
 	  			        alert('login successful');
 	  			        getElementById('myModal').modal('hide');
 	  			        $scope.myUrl = $location.path('/dashboardProf');
@@ -91,7 +126,7 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookies){
 
 });
 
-app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies){
+app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookieStore){
 	
   $scope.role;
   $scope.firstName;
@@ -120,6 +155,7 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies)
 	  		var res = $http.put('http://localhost:8080/students', dataJsonObj);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
+				$scope.myUrl = $location.path('/dashboard');
 				
 				
 			});
@@ -127,7 +163,8 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies)
 				alert( "failure message: " + JSON.stringify({data: data}));
 			});	
 			$rootScope.username=$scope.firstName;
-			$rootScope.logIn=true;
+			$cookieStore.put('logInStatus',true);
+			$rootScope.logIn=$cookieStore.get('logInStatus');
 
 	  	}
 	  	else if($scope.role=="Professor"|| $scope.role=="professor"){
@@ -136,13 +173,16 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookies)
 			console.log($scope.ninerNumber);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
+				$scope.myUrl = $location.path('/dashboardProf');
 				
 			});
 			res.error(function(data, status, headers, config) {
 				alert( "failure message: " + JSON.stringify({data: data}));
 			});	
 			$rootScope.username=$scope.firstName;
-			$rootScope.logIn=true;
+			
+			$cookieStore.put('logInStatus',true);
+			$rootScope.logIn=$cookieStore.get('logInStatus');
 
 	  	}
 	  	else{
@@ -158,10 +198,13 @@ app.controller('SignOut', function($scope,$rootScope,$location){
 	$scope.signout=function(){
 		console.log($rootScope.logIn);
 		$rootScope.logIn=false;
+		$cookieStore.put('logInStatus',false);
+		$rootScope.logIn=$cookieStore.get('logInStatus');
+		$scope.myUrl = $location.path('/');
 	};
 });
 
-app.controller('positions', function($scope,$http){
+app.controller('positions', function($scope,$http,$rootScope){
 	$scope.name="asdasd";
 	$http.get('http://localhost:8080/positions')
 	  .success(function(response){
@@ -169,10 +212,113 @@ app.controller('positions', function($scope,$http){
 		 data=JSON.stringify(response);
 		 var jsonObj=JSON.parse(data);
 		 $scope.pos=jsonObj;
+		 
 		 for(i=0;i<jsonObj.length;i++){
-			 console.log($scope.pos[i]);
+			 console.log($scope.pos[i].id);
 		 }
 		 
-	  });	 
+	  });
+	$rootScope.applied=[];
+	$http.get('http://localhost:8080/applications')
+	  .success(function(response){
+	    //$scope.students=response.students;
+		 data=JSON.stringify(response);
+		 var jsonObj=JSON.parse(data);
+		 $scope.app=jsonObj;
+		 for(i=0;i<jsonObj.length;i++){
+			 if($scope.app[i].ninerId==$rootScope.userNinerId){
+				 $rootScope.applied.push($scope.app[i].posId);
+			 }
+		 }
+		 
+	  });	
+	$scope.check=function(posId){
+		var i;
+		var len=$rootScope.applied.length;
+		console.log("Applied Length : ", len);
+		for (i = 0; i < len; i++) {
+			console.log("in the loop");
+			if($rootScope.applied[i]==posId){
+				console.log("true");
+				return true;
+			}
+		    	  
+		} 
+		
+	}
+	$scope.deletePos=function(tempId){
+		var res = $http.delete('http://localhost:8080/positions/'+tempId);
+		res.success(function(data, status, headers, config) {
+			$scope.message = data;
+			alert( "Position Deleted: Refresh and login to view");
+		});
+		res.error(function(data, status, headers, config) {
+			alert( "failure message: " + JSON.stringify({data: data}));
+		});	
+		
+	};
+	
+	$scope.apply=function(posId,subject){
+		var dataObj = {
+				ninerId : $rootScope.userNinerId,
+				emailId : $rootScope.userEmailId,
+				firstName : $rootScope.username,
+				lastName : $rootScope.userLastName,
+				posId : posId,
+				subject : subject
+		};	
+	  dataObjString=JSON.stringify(dataObj);
+	  var dataJsonObj=JSON.parse(dataObjString);
+	  
+	  		var res = $http.put('http://localhost:8080/applications', dataJsonObj);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+				alert( "Applied Succesfully: Refresh and login to view");
+				
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});	
+
+	};
+});
+
+app.controller('createPos',function($scope, $http, $rootScope, $location, $cookies){
+	
+	  $scope.position;
+	  $scope.description;
+	  $scope.subject;
+		
+
+	  
+	  $scope.createPosition=function(){
+		  
+		  var dataObj = {
+					ninerId : $rootScope.userNinerId,
+					emailId : $rootScope.userEmailId,
+					firstName : $rootScope.username,
+					lastName : $rootScope.userLastName,
+					position : $scope.position,
+					subject : $scope.subject,
+					description : $scope.description
+			};	
+		  dataObjString=JSON.stringify(dataObj);
+		  var dataJsonObj=JSON.parse(dataObjString);
+			
+		  	
+		  		
+		  		var res = $http.put('http://localhost:8080/positions', dataJsonObj);
+				res.success(function(data, status, headers, config) {
+					$scope.message = data;
+					alert( "Position Added: Refresh and login to view");
+					
+				});
+				res.error(function(data, status, headers, config) {
+					alert( "failure message: " + JSON.stringify({data: data}));
+				});	
+		  	
+	  };
+
+
 });
 

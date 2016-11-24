@@ -29,6 +29,10 @@ public class Position {
 	
 	private String description;
 
+	public int getId() {
+		return id;
+	}
+	
 	public Integer getninerId() {
 		return ninerId;
 	}
