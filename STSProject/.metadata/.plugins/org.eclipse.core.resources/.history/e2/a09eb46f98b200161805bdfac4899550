@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
 
           <ul class="nav navbar-nav navbar-right" ng-show="logIn">
-          	<li id="uploadResume"><a href="" data-toggle="modal" data-target="#createPositionModal"><span class="glyphicon glyphicon-upload"></span> Upload Resume</a></li>
+          	<li id="uploadResume"><a href="" data-toggle="modal" data-target="#uploadResume"><span class="glyphicon glyphicon-upload"></span> Upload Resume</a></li>
           	<li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="#/" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
           </ul>
           
@@ -53,27 +53,61 @@
 	    
 	</div>
 	
+	
 	<div class="container">
     <!-- Modal -->
-    <div class="modal fade" id="createPositionModal" role="dialog">
+    <div class="modal fade" id="uploadResume" role="dialog">
       <div class="modal-dialog">
 
         <!-- Modal content-->
         <div id="modal" class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">Resume Upload</h4>
+            <h4 class="modal-title">Sign Up here</h4>
           </div>
           <div class="modal-body">
-              <form ng-controller="fileUpload" class="form-horizontal">
+              <form ng-controller="SignUp" class="form-horizontal">
                   <div class="form-group">
-                    <label class="control-label col-sm-2" for="Position">Upload Document:</label>
+                    <label class="control-label col-sm-2" for="role">Sign up as:</label>
                     <div class="col-sm-10">
-                      <input type="file" id="resume" size="50">
-                      <br>
-                      <button ng-click="upload()">Upload</button>
+                      <input type="text" class="form-control" id="role" placeholder="Professor/ Student" ng-model="role">
                     </div>
-                   </div>	
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="firstName">First Name:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="firstName" placeholder="Enter your first name" ng-model="firstName">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="lastName">Last Name:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" ng-model="lastName">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="800Number">Niner Number:</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="800Number" placeholder="800#" ng-model="ninerNumber">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" placeholder="Enter email" ng-model="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for="pwd">Password:</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" ng-model="password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" ng-click="signUpFunction()" class="btn btn-default" data-dismiss="modal">Submit</button>
+                    </div>
+                  </div>
                 </form>
           </div>
           <div class="modal-footer">
@@ -83,5 +117,6 @@
 
       </div>
     </div>
-	</div>
+
+    </div>
 	

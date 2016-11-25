@@ -65,13 +65,13 @@
             <h4 class="modal-title">Resume Upload</h4>
           </div>
           <div class="modal-body">
-              <form ng-controller="fileUpload" class="form-horizontal">
+              <form ng-controller="createPos" class="form-horizontal">
                   <div class="form-group">
                     <label class="control-label col-sm-2" for="Position">Upload Document:</label>
                     <div class="col-sm-10">
                       <input type="file" id="resume" size="50">
                       <br>
-                      <button ng-click="upload()">Upload</button>
+                      <button id="apply">Upload</button>
                     </div>
                    </div>	
                 </form>

@@ -205,6 +205,7 @@ app.controller('SignOut', function($scope,$rootScope,$location){
 });
 
 app.controller('positions', function($scope,$http,$rootScope){
+	$scope.name="asdasd";
 	$http.get('http://localhost:8080/positions')
 	  .success(function(response){
 	    //$scope.students=response.students;
@@ -313,6 +314,19 @@ app.controller('createPos',function($scope, $http, $rootScope, $location, $cooki
 					$scope.message = data;
 					alert( "Position Added: Refresh and login to view");
 					
+					$http.get('http://localhost:8080/positions')
+					  .success(function(response){
+					    //$scope.students=response.students;
+						 data=JSON.stringify(response);
+						 var jsonObj=JSON.parse(data);
+						 $scope.pos=jsonObj;
+						 
+						 for(i=0;i<jsonObj.length;i++){
+							 console.log($scope.pos[i].id);
+						 }
+						 
+					  });
+					
 				});
 				res.error(function(data, status, headers, config) {
 					alert( "failure message: " + JSON.stringify({data: data}));
@@ -325,6 +339,7 @@ app.controller('createPos',function($scope, $http, $rootScope, $location, $cooki
 
 app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cookies){
 	$scope.upload=function(){
+	  
 	  var f = document.getElementById('resume').files[0],
 	      r = new FileReader();
 	  r.onloadend = function(e){

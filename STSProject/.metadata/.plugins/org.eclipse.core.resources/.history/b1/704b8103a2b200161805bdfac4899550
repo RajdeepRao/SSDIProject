@@ -325,6 +325,7 @@ app.controller('createPos',function($scope, $http, $rootScope, $location, $cooki
 
 app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cookies){
 	$scope.upload=function(){
+	  $scope.tempVal="Working";
 	  var f = document.getElementById('resume').files[0],
 	      r = new FileReader();
 	  r.onloadend = function(e){
