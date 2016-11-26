@@ -23,6 +23,7 @@
     }
     .panel-body{
       background-image: url("images/backgroundimage4.jpg");
+      background-repeat: repeat-y;
     }
     #apply{
       background-image: url("images/backgroundimage6.jpg");

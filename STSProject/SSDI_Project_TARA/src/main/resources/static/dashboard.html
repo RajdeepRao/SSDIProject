@@ -47,8 +47,7 @@
 	        <div class="panel-body"><b>Position</b>: {{p.position}}</div>
 	        <div class="panel-body"><b>Professor EmailId</b>: {{p.emailId}}</div>
 	        <div class="panel-body"><b>Position Description</b>: {{p.description}} </div>
-	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-show="!check(p.id)" ng-click="apply(p.id,p.subject,p.firstName)">Apply</button></div>
-	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-show="check(p.id)" disabled >Applied</button></div>    
+	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-disabled="check(p.id)" ng-click="apply(p.id,p.subject,p.firstName)">Apply</button></div>    
 	    	</div> 
 		</div>
 		<div class="clearfix" ng-if="$index%3==2"></div>

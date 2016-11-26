@@ -65,6 +65,16 @@ app.config(function($routeProvider){
     },
     templateUrl:'myTests.html'
   })
+  .when('/exam',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'exam.html'
+  })
   .otherwise({
     redirectTo: '/'
   })
@@ -441,7 +451,9 @@ app.controller('test', function($scope,$http,$rootScope){
 	$scope.optionC;
 	$scope.optionD;
 	$scope.correctAns;
-	
+	$scope.result;
+	$rootScope.score=0;
+	  console.log($scope.result);
 	$http.get('http://localhost:8080/test')
 	  .success(function(response){
 	    //$scope.students=response.students;
@@ -503,6 +515,18 @@ app.controller('test', function($scope,$http,$rootScope){
 				alert( "failure message: " + JSON.stringify({data: data}));
 			});	
 	  };
+	  console.log($scope.result);
+	  $scope.validate=function(value,correctAns,status){
+		  console.log("validating:",value);
+		  console.log("Result and correct Ans: ",value,correctAns);
+		  
+		  if(value==correctAns){
+			  $rootScope.score++;
+			  console.log("In validate, socre: ",$rootScope.score);
+		  }
+		  status=1;
+		  console.log("Status:",status);
+	  };
 	
 });
 
@@ -523,7 +547,9 @@ app.controller('testtakers', function($scope,$http,$rootScope){
 		 
 	  });
 	
-	$scope.takeTest=function(tempId){
+	$scope.takeTest=function(tempId,posId){
+		$rootScope.testSubj=posId;
+		console.log("Position ID: ",$rootScope.testSubj);
 		var res = $http.delete('http://localhost:8080/testtakers/'+tempId);
 		res.success(function(data, status, headers, config) {
 			$scope.message = data;

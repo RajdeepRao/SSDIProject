@@ -32,6 +32,8 @@ public class Test {
 	private String subject;
 	
 	private String instructor;
+	
+	private int status=0;
 
 	public int getId() {
 		return id;
@@ -109,6 +111,8 @@ public class Test {
 		this.instructor = instructor;
 	}
 
-	
+	public int getStatus() {
+		return status;
+	}
 	
 }
