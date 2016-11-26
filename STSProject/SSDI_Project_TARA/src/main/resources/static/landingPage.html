@@ -17,7 +17,8 @@
           </ul>
           
           <ul class="nav navbar-nav navbar-right" ng-show="logIn">
-          	<li><a href="#/dashboard" data-toggle="modal" data-target="">DashBoard</a></li>
+          	<li ng-if="userRole=='Student'"><a href="#/dashboard" data-toggle="modal" data-target="">DashBoard</a></li>
+          	<li ng-if="userRole=='Professor'"><a href="#/dashboardProf" data-toggle="modal" data-target="">DashBoard</a></li>
           	<li><a href="" data-toggle="modal" data-target="">Welcome {{username}}</a></li>
             <li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="#/" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-user"></span> Sign Out</a></li>
           </ul>

@@ -25,6 +25,36 @@ app.config(function($routeProvider){
     },
     templateUrl:'dashboardProf.html'
   })
+  .when('/receivedApplications',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'receivedApplications.html'
+  })
+  .when('/myApplications',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'myApplications.html'
+  })
+  .when('/testQuestions',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'testQuestions.html'
+  })
   .otherwise({
     redirectTo: '/'
   })
@@ -63,8 +93,7 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookieStor
 		  				$rootScope.userLastName=jsonObj[i].lastName;
 		  				$rootScope.userNinerId=jsonObj[i].ninerId;
 		  				$rootScope.userEmailId=jsonObj[i].emailId;
-		  				$rootScope.userRole=$scope.role;
-		  				
+		  				$rootScope.userRole=$cookieStore.get('role');
 		  				$scope.myUrl = $location.path('/dashboard');
 		  				console.log($scope.myUrl);
 		  				alert('login successful');
@@ -106,7 +135,7 @@ app.controller('LogIn',function($scope,$rootScope, $location, $http, $cookieStor
 	  				$rootScope.userLastName=jsonObj[i].lastName;
 	  				$rootScope.userNinerId=jsonObj[i].ninerId;
 	  				$rootScope.userEmailId=jsonObj[i].emailId;
-	  				$rootScope.userRole=$scope.role
+	  				$rootScope.userRole=$cookieStore.get('role');
 	  				
 	  				$scope.myUrl = $location.path('/dashboardProf');
 	  			        alert('login successful');
@@ -259,14 +288,15 @@ app.controller('positions', function($scope,$http,$rootScope){
 		
 	};
 	
-	$scope.apply=function(posId,subject){
+	$scope.apply=function(posId,subject,instructor){
 		var dataObj = {
 				ninerId : $rootScope.userNinerId,
 				emailId : $rootScope.userEmailId,
 				firstName : $rootScope.username,
 				lastName : $rootScope.userLastName,
 				posId : posId,
-				subject : subject
+				subject : subject,
+				instructor: instructor
 		};	
 	  dataObjString=JSON.stringify(dataObj);
 	  var dataJsonObj=JSON.parse(dataObjString);
@@ -325,12 +355,113 @@ app.controller('createPos',function($scope, $http, $rootScope, $location, $cooki
 
 app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cookies){
 	$scope.upload=function(){
+		console.log("Uploaded");
 	  var f = document.getElementById('resume').files[0],
 	      r = new FileReader();
 	  r.onloadend = function(e){
 	    var data = e.target.result;
 	    //send your binary data via $http or $resource or do anything else with it
+	    var res = $http.put('https://drive.google.com/drive/folders/0BzPZErUqV_nyVUlzZGtLa1J1Q0k', data);
+		res.success(function(data, status, headers, config) {
+			$scope.message = data;
+			alert( "Resume uploaded: Refresh and login to view");
+		});
+		res.error(function(data, status, headers, config) {
+			alert( "failure message: " + JSON.stringify({data: data}));
+		});	
+	    
 	  }
 	  r.readAsBinaryString(f);
 	}
 });
+
+app.controller('receivedApplications', function($scope,$http,$rootScope){
+	$http.get('http://localhost:8080/applications')
+	  .success(function(response){
+	    //$scope.students=response.students;
+		 data=JSON.stringify(response);
+		 var jsonObj=JSON.parse(data);
+		 $scope.apps=jsonObj;
+		 
+		 for(i=0;i<jsonObj.length;i++){
+			 console.log($scope.apps[i].id);
+		 }
+		 
+	  });
+});
+
+app.controller('test', function($scope,$http,$rootScope){
+	
+	$scope.posId;
+	$scope.subjectForTest;
+	$scope.question;
+	$scope.optionA;
+	$scope.optionB;
+	$scope.optionC;
+	$scope.optionD;
+	$scope.correctAns;
+	
+	$http.get('http://localhost:8080/test')
+	  .success(function(response){
+	    //$scope.students=response.students;
+		 data=JSON.stringify(response);
+		 var jsonObj=JSON.parse(data);
+		 $scope.pos=jsonObj;
+		 
+		 for(i=0;i<jsonObj.length;i++){
+			 console.log($scope.pos[i].id);
+		 }
+		 
+	  });
+	 
+	
+	 $scope.createQuestion=function(){
+		  
+		 
+		  var dataObj = {
+				  	question : $scope.question,
+				  	optionA : $scope.optionA,
+					optionB : $scope.optionB,
+					optionC : $scope.optionC,
+					optionD : $scope.optionD,
+				  	correctAns : $scope.correctAns,
+				  	posId : $scope.posId,
+					subject : $scope.subject,
+					instructor : $rootScope.username,
+					
+			};	
+		  dataObjString=JSON.stringify(dataObj);
+		  var dataJsonObj=JSON.parse(dataObjString);
+			
+		  	
+		  		
+		  		var res = $http.put('http://localhost:8080/test', dataJsonObj);
+				res.success(function(data, status, headers, config) {
+					$scope.message = data;
+					alert( "Question Added: Refresh and login to view");
+					
+				});
+				res.error(function(data, status, headers, config) {
+					alert( "failure message: " + JSON.stringify({data: data}));
+				});	
+		  	
+	  };
+	  
+	  $scope.viewAnswer=function(ans){
+		  console.log(ans);
+		  alert( "The answer is :"+ ans);
+	  };
+
+	  $scope.deleteQuestion=function(tempId){
+		  var res = $http.delete('http://localhost:8080/test/'+tempId);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+				alert( "Question Deleted: Refresh and login to view");
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});	
+	  };
+	
+});
+

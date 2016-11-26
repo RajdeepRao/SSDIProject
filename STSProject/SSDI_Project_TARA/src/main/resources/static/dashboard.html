@@ -12,6 +12,7 @@
 
           <ul class="nav navbar-nav navbar-right" ng-show="logIn">
           	<li id="uploadResume"><a href="" data-toggle="modal" data-target="#createPositionModal"><span class="glyphicon glyphicon-upload"></span> Upload Resume</a></li>
+          	<li id="uploadResume"><a href="#/myApplications" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-upload"></span> My applications</a></li>
           	<li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="#/" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
           </ul>
           
@@ -43,7 +44,7 @@
 	        <div class="panel-body"><b>Position</b>: {{p.position}}</div>
 	        <div class="panel-body"><b>Professor EmailId</b>: {{p.emailId}}</div>
 	        <div class="panel-body"><b>Position Description</b>: {{p.description}} </div>
-	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-show="!check(p.id)" ng-click="apply(p.id,p.subject)">Apply</button></div>
+	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-show="!check(p.id)" ng-click="apply(p.id,p.subject,p.firstName)">Apply</button></div>
 	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-show="check(p.id)" disabled >Applied</button></div>    
 	    	</div> 
 		</div>

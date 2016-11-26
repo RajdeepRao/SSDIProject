@@ -7,10 +7,13 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#/"><img src="images/logo.gif" height="30" width="35"> </a>
+          
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
 
           <ul class="nav navbar-nav navbar-right" ng-show="logIn">
+            <li id="test"><a href="#/testQuestions"><span class="glyphicon glyphicon-list-alt"></span> Test</a></li>
+            <li id="receivedApp"><a href="#/receivedApplications"><span class="glyphicon glyphicon-folder-open"></span> Applications Received</a></li>
           	<li id="createPos"><a href="" data-toggle="modal" data-target="#createPositionModal"><span class="glyphicon glyphicon-upload"></span> Create Position</a></li>
           	<li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="#/" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
           </ul>

@@ -26,6 +26,8 @@ public class Application {
 	private int posId;
 	
 	private String subject;
+	
+	private String instructor;
 
 	public int getId() {
 		return id;
@@ -77,6 +79,14 @@ public class Application {
 
 	public void setSubject(String subject) {
 		this.subject = subject;
+	}
+	
+	public String getInstructor() {
+		return instructor;
+	}
+	
+	public void setInstructor(String instructor) {
+		this.instructor = instructor;
 	}
 
 }
