@@ -13,6 +13,7 @@
           <ul class="nav navbar-nav navbar-right" ng-show="logIn">
           	<li id="uploadResume"><a href="" data-toggle="modal" data-target="#createPositionModal"><span class="glyphicon glyphicon-upload"></span> Upload Resume</a></li>
           	<li id="uploadResume"><a href="#/myApplications" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-upload"></span> My applications</a></li>
+          	<li id="uploadResume"><a href="#/myTests" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-upload"></span> My Tests</a></li>
           	<li id="signOut" ng-controller="SignOut" ng-click="signout()"><a href="#/" data-toggle="modal" data-target=""><span class="glyphicon glyphicon-log-out"></span> Sign Out</a></li>
           </ul>
           
@@ -24,14 +25,16 @@
 
 	<div class="container-fluid">
 		<div class="jumbotron">
-		  <div class="container text-center">
+		  <div class="container text-center" ng-controller="testtakers">
 		    <h1>Welcome {{username}}</h1>      
-		    <p>This is your Dashboard</p>
+		    <p>This is your Dashboard. You have {{dueTests}} tests due</p>
 		  </div>
 		</div>
 	</div>
 	
    <br><br><br><br>
+   
+	
 	
 	<div class="container">
 	<div ng-controller="positions" class="row" >

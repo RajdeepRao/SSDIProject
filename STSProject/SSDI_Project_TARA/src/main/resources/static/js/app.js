@@ -55,6 +55,16 @@ app.config(function($routeProvider){
     },
     templateUrl:'testQuestions.html'
   })
+  .when('/myTests',{
+    resolve: {
+      "check": function($location,$rootScope){
+          if(!$rootScope.logIn){
+            $location.path('/');
+          }
+      }
+    },
+    templateUrl:'myTests.html'
+  })
   .otherwise({
     redirectTo: '/'
   })
@@ -388,6 +398,37 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 		 }
 		 
 	  });
+	
+	$scope.sendTest=function(firstName,posId,subject,username){
+		var dataObj = {
+			  	studentName : firstName,
+			  	posId : posId,
+				subject : subject,
+				instructor : username,
+				taken: 0
+		};	
+	  dataObjString=JSON.stringify(dataObj);
+	  var dataJsonObj=JSON.parse(dataObjString);
+	  		
+	  		var res = $http.put('http://localhost:8080/testtakers', dataJsonObj);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+				alert( "Request Sent: Refresh and login to view");
+				
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});	
+	  	
+  };
+  
+ 
+  $scope.viewAnswer=function(ans){
+	  console.log(ans);
+	  alert( "The answer is :"+ ans);
+  };
+
+	
 });
 
 app.controller('test', function($scope,$http,$rootScope){
@@ -465,3 +506,31 @@ app.controller('test', function($scope,$http,$rootScope){
 	
 });
 
+app.controller('testtakers', function($scope,$http,$rootScope){
+	$rootScope.dueTests=0;
+	$http.get('http://localhost:8080/testtakers')
+	  .success(function(response){
+	    //$scope.students=response.students;
+		 data=JSON.stringify(response);
+		 var jsonObj=JSON.parse(data);
+		 $scope.pos=jsonObj;
+		 for(i=0;i<jsonObj.length;i++){
+			 console.log($scope.pos[i].id);
+			 if($scope.pos[i].studentName==$rootScope.username)
+				 $rootScope.dueTests++;
+			 console.log($rootScope.dueTests);
+		 }
+		 
+	  });
+	
+	$scope.takeTest=function(tempId){
+		var res = $http.delete('http://localhost:8080/testtakers/'+tempId);
+		res.success(function(data, status, headers, config) {
+			$scope.message = data;
+			alert( "Test Underway ");
+		});
+		res.error(function(data, status, headers, config) {
+			alert( "failure message: " + JSON.stringify({data: data}));
+		});	
+	};
+});
