@@ -7818,3 +7818,335 @@ org.eclipse.jdt.core.JavaModelException: bin/src/main/java/com/TaRa [in DBTestPr
 2016-11-26 16:58:59,837 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2016-11-26 16:58:59,839 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-11-26 16:58:59,839 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:24:45,106 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:24:45,126 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:24:45,174 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2016-11-26 18:24:45,222 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:24:45,229 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:38:43,721 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:38:43,738 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:38:43,739 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:38:43,743 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:38:43,744 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:39:48,182 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:39:48,183 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:39:48,183 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:39:48,191 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:39:48,191 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:40:16,823 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:40:16,824 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:40:16,824 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:40:16,828 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:40:16,828 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:41:10,345 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:41:10,345 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:41:10,346 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:41:10,352 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:41:10,352 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:43:04,554 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:04,554 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:43:04,554 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:43:04,572 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:04,572 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:43:10,755 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:10,755 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:43:10,756 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:43:10,759 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:10,759 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:43:23,789 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:23,790 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:43:23,790 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:43:23,797 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:23,797 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:43:44,834 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:44,834 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:43:44,835 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:43:44,838 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:43:44,838 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:48:22,495 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:48:22,495 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:48:22,496 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:48:22,499 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:48:22,499 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:49:13,770 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:49:13,770 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:49:13,771 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:49:13,774 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:49:13,774 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:50:00,106 [Worker-25] INFO  o.e.m.i.launch.MavenLaunchDelegate - /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA
+2016-11-26 18:50:00,107 [Worker-25] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Ppom.xml -B test
+2016-11-26 18:50:34,534 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:50:34,536 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:50:34,548 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2016-11-26 18:50:34,551 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:50:34,551 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:53:33,135 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:53:33,136 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:53:33,136 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:53:33,140 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:53:33,140 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:56:23,867 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:56:23,867 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:56:23,868 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:56:23,871 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:56:23,871 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:58:08,023 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:58:08,023 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:58:08,024 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:58:08,027 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:58:08,027 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 18:58:17,345 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:58:17,346 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 18:58:17,346 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 18:58:17,350 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 18:58:17,351 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:09:48,872 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:09:48,873 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:09:48,873 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:09:48,876 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:09:48,876 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:13:02,904 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:13:02,904 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:13:02,905 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:13:02,909 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:13:02,909 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:13:49,402 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:13:49,402 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:13:49,403 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:13:49,405 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:13:49,405 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:17:57,626 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:17:57,627 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:17:57,627 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:17:57,629 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:17:57,629 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:19:44,369 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:19:44,370 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:19:44,370 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:19:44,373 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:19:44,373 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:21:10,496 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:21:10,496 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:21:10,497 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:21:10,500 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:21:10,501 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:23:19,038 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:23:19,039 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:23:19,039 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:23:19,041 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:23:19,042 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:32:01,528 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:32:01,529 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:32:01,529 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:32:01,531 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:32:01,531 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:33:12,815 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:33:12,815 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:33:12,815 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:33:12,818 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:33:12,818 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:34:28,338 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:34:28,338 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:34:28,338 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:34:28,340 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:34:28,340 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:36:43,279 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:36:43,279 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:36:43,279 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:36:43,282 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:36:43,283 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:38:04,661 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:38:04,661 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:38:04,662 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:38:04,665 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:38:04,665 [Worker-24] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:39:37,454 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:39:37,454 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:39:37,454 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:39:37,456 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:39:37,456 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:41:57,926 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:41:57,927 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:41:57,927 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:41:57,929 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:41:57,929 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:47:51,485 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:47:51,485 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:47:51,485 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:47:51,487 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:47:51,487 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:47:52,693 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:47:52,694 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:47:52,695 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:47:52,699 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:47:52,699 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:49:37,447 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:49:37,448 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:49:37,448 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:49:37,450 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:49:37,451 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 19:49:50,224 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:49:50,224 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 19:49:50,224 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 19:49:50,226 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 19:49:50,227 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:15:36,416 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:15:36,445 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:15:36,445 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:15:36,448 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:15:36,448 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:16:50,634 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:16:50,634 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:16:50,634 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:16:50,637 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:16:50,637 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:18:33,677 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:18:33,677 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:18:33,678 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:18:33,680 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:18:33,680 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:20:54,003 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:20:54,004 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:20:54,004 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:20:54,006 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:20:54,006 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:33:06,171 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:33:06,172 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:33:06,174 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:33:06,176 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:33:06,176 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:37:49,610 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:37:49,611 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:37:49,611 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:37:49,614 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:37:49,614 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:41:03,484 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:41:03,485 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:41:03,485 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:41:03,487 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:41:03,487 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:42:10,936 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:42:10,936 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:42:10,936 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:42:10,938 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:42:10,939 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:42:24,148 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:42:24,149 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:42:24,149 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:42:24,151 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:42:24,152 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:49:21,079 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:49:21,080 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:49:21,081 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:49:21,083 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:49:21,083 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:49:58,076 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:49:58,077 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:49:58,078 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:49:58,082 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:49:58,082 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:50:22,062 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:50:22,062 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:50:22,062 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:50:22,064 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:50:22,065 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:57:23,488 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:57:23,488 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:57:23,489 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:57:23,491 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:57:23,491 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:57:44,223 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:57:44,223 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:57:44,223 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:57:44,225 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:57:44,225 [Worker-50] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 20:58:37,028 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:58:37,029 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 20:58:37,029 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 20:58:37,032 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 20:58:37,032 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:00:08,738 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:00:08,738 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:00:08,738 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:00:08,740 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:00:08,740 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:01:56,412 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:01:56,412 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:01:56,414 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:01:56,416 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:01:56,417 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:02:35,639 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:02:35,639 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:02:35,639 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:02:35,641 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:02:35,642 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:03:37,191 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:03:37,192 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:03:37,192 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:03:37,195 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:03:37,195 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:13:56,613 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:13:56,614 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:13:56,614 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:13:56,616 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:13:56,617 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:14:57,031 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:14:57,031 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:14:57,032 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:14:57,034 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:14:57,034 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:20:43,722 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:20:43,723 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:20:43,723 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:20:43,725 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:20:43,725 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:27:07,000 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:27:07,000 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:27:07,006 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:27:07,008 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:27:07,008 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:28:29,018 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:28:29,018 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:28:29,019 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:28:29,021 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:28:29,021 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:29:04,102 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:29:04,102 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:29:04,102 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:29:04,104 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:29:04,104 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:30:07,934 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:30:07,935 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:30:07,935 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:30:07,938 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:30:07,939 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:32:32,654 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:32:32,655 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:32:32,655 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:32:32,656 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:32:32,657 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:33:37,830 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:33:37,830 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:33:37,831 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:33:37,833 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:33:37,833 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:34:25,646 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:34:25,646 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:34:25,646 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:34:25,649 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:34:25,649 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:35:12,280 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:35:12,280 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:35:12,280 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:35:12,282 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:35:12,282 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 21:36:09,109 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:36:09,109 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-11-26 21:36:09,109 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 21:36:09,111 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 21:36:09,112 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources
+2016-11-26 23:50:21,309 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 23:50:21,320 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2016-11-26 23:50:21,361 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 24 resources
+2016-11-26 23:50:21,367 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-26 23:50:21,367 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rajdeeprao/Documents/UNC Charlotte/SSDI/Project/SSDIProject/STSProject/SSDI_Project_TARA/src/test/resources

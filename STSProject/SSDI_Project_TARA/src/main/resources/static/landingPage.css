@@ -19,6 +19,7 @@
 body{
   background-image: url("images/backgroundimage4.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 #modal{
   background-image: url("images/backgroundimage4.jpg");

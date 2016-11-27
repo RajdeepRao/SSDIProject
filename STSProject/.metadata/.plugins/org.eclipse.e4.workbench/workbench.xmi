@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_VYCq4LLWEeaCDaMSUkesgg" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_VaaCYLLWEeaCDaMSUkesgg" bindingContexts="_VdEVIbLWEeaCDaMSUkesgg">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;Dashboard.css&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/Dashboard.css&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/Dashboard.css&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;dashboard.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Test.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/entity/Test.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/entity/Test.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestDAO.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/dao/TestDAO.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/dao/TestDAO.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;exam.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/exam.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/exam.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;myTests.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestTakers.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/entity/TestTakers.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/entity/TestTakers.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;myTests.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/images/myTests.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/images/myTests.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestController.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/controller/TestController.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/controller/TestController.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestTakersController.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/controller/TestTakersController.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/controller/TestTakersController.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestService.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/service/TestService.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/service/TestService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;PositionService.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/service/PositionService.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/service/PositionService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestTakersService.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/service/TestTakersService.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/service/TestTakersService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestTakersDAO.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/dao/TestTakersDAO.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/dao/TestTakersDAO.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;receivedApplications.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/receivedApplications.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/receivedApplications.html&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;workbench>&#xA;&lt;mruList>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;SSDI_Project_TARA/pom.xml&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/pom.xml&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.springframework.ide.eclipse.PropertiesFileEditor&quot; name=&quot;application.properties&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/application.properties&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/application.properties&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ApplicationDAO.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/dao/ApplicationDAO.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/dao/ApplicationDAO.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ApplicationController.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/controller/ApplicationController.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/controller/ApplicationController.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ApplicationService.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/service/ApplicationService.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/service/ApplicationService.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Application.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/entity/Application.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/entity/Application.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;landingPage.css&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/landingPage.css&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/landingPage.css&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.css.core.csssource.source&quot; name=&quot;Dashboard.css&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/Dashboard.css&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/Dashboard.css&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;dashboard.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Test.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/entity/Test.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/entity/Test.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestDAO.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/dao/TestDAO.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/dao/TestDAO.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;exam.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/exam.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/exam.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;myTests.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TestTakers.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/entity/TestTakers.java&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/entity/TestTakers.java&quot;/>&#xA;&lt;/file>&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;myTests.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/images/myTests.html&quot;>&#xA;&lt;persistable path=&quot;/SSDI_Project_TARA/src/main/resources/static/images/myTests.html&quot;/>&#xA;&lt;/file>&#xA;&lt;/mruList>&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_VaaCYLLWEeaCDaMSUkesgg" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_VaaCYbLWEeaCDaMSUkesgg" label="%trimmedwindow.label.eclipseSDK" x="10" y="24" width="1024" height="720">
@@ -247,7 +247,7 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_Va6Y07LWEeaCDaMSUkesgg" elementId="org.eclipse.egit.ui.RepositoriesView" toBeRendered="false" ref="_Va7ASbLWEeaCDaMSUkesgg"/>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_Va6Y1LLWEeaCDaMSUkesgg" containerData="8059" selectedElement="_Va6Y57LWEeaCDaMSUkesgg">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_Va6Y1LLWEeaCDaMSUkesgg" containerData="8059" selectedElement="_Va6Y1bLWEeaCDaMSUkesgg">
               <children xsi:type="basic:PartSashContainer" xmi:id="_Va6Y1bLWEeaCDaMSUkesgg" containerData="5665" selectedElement="_Va6Y1rLWEeaCDaMSUkesgg" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_Va6Y1rLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.editorss" containerData="9000" ref="_Va6aLbLWEeaCDaMSUkesgg"/>
                 <children xsi:type="basic:PartSashContainer" xmi:id="_Va6Y17LWEeaCDaMSUkesgg" containerData="1000" selectedElement="_Va6Y2LLWEeaCDaMSUkesgg">
@@ -279,8 +279,6 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_Va6Y57LWEeaCDaMSUkesgg" elementId="bottom" containerData="4335" selectedElement="_Va6Y7LLWEeaCDaMSUkesgg">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
-                <tags>active</tags>
-                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Va6Y6LLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.views.ProblemView" ref="_Va7AEbLWEeaCDaMSUkesgg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Va6Y6bLWEeaCDaMSUkesgg" elementId="org.eclipse.jdt.ui.JavadocView" ref="_Va7ALbLWEeaCDaMSUkesgg"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_Va6Y6rLWEeaCDaMSUkesgg" elementId="org.eclipse.jdt.ui.SourceView" ref="_Va7AN7LWEeaCDaMSUkesgg"/>
@@ -319,130 +317,24 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_Va6aLbLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.editorss" selectedElement="_Va6aLrLWEeaCDaMSUkesgg">
-      <children xsi:type="basic:PartStack" xmi:id="_Va6aLrLWEeaCDaMSUkesgg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_8WMw0LQDEeaUPLOcUy5Xwg">
+      <children xsi:type="basic:PartStack" xmi:id="_Va6aLrLWEeaCDaMSUkesgg" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_Va6aRbLWEeaCDaMSUkesgg">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
+        <tags>noFocus</tags>
         <children xsi:type="basic:Part" xmi:id="_Va6aL7LWEeaCDaMSUkesgg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Dashboard" iconURI="platform:/plugin/org.springsource.ide.eclipse.dashboard.ui/icons/view16/spring.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor&quot; name=&quot;Dashboard&quot; partName=&quot;Dashboard&quot; title=&quot;Dashboard&quot; tooltip=&quot;Dashboard&quot;>&#xA;&lt;input factoryID=&quot;org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory&quot; openDashboard=&quot;true&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_Va6aMLLWEeaCDaMSUkesgg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="index.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;index.html&quot; partName=&quot;index.html&quot; title=&quot;index.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/index.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/index.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1053&quot; selectionTopPixel=&quot;117&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aMbLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aMrLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aM7LWEeaCDaMSUkesgg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aNLLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aNbLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aNrLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aN7LWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aOLLWEeaCDaMSUkesgg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aObLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aOrLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aO7LWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aPLLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aPbLWEeaCDaMSUkesgg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aPrLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aP7LWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aQLLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aQbLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aQrLWEeaCDaMSUkesgg" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aQ7LWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.EditorContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.EditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aRLLWEeaCDaMSUkesgg" elementId="org.eclipse.wst.html.core.htmlsource.source.RulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.html.core.htmlsource.source.source.RulerContext</tags>
-            <tags>popup:org.eclipse.wst.sse.ui.StructuredTextEditor.RulerContext</tags>
-          </menus>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_Va6aRbLWEeaCDaMSUkesgg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="app.js" iconURI="platform:/plugin/org.eclipse.wst.jsdt.ui/icons/full/obj16/jcu_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;app.js&quot; partName=&quot;app.js&quot; title=&quot;app.js&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/js/app.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/js/app.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;14284&quot; selectionTopPixel=&quot;8700&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.jsdt.ui.CompilationUnitEditor&quot; name=&quot;app.js&quot; partName=&quot;app.js&quot; title=&quot;app.js&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/js/app.js&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/js/app.js&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;17610&quot; selectionTopPixel=&quot;10996&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.jsdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
           <menus xsi:type="menu:PopupMenu" xmi:id="_Va6aRrLWEeaCDaMSUkesgg" elementId="#JavaScriptEditorContext">
             <tags>menuContribution:popup</tags>
             <tags>popup:#JavaScriptEditorContext</tags>
@@ -476,12 +368,6 @@
             <tags>popup:#OverviewRulerContext</tags>
           </menus>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_dkkywLNrEeaN8dt_m1uJRw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dashboardProf.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;dashboardProf.html&quot; partName=&quot;dashboardProf.html&quot; title=&quot;dashboardProf.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/dashboardProf.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/dashboardProf.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;99&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
         <children xsi:type="basic:Part" xmi:id="_rZCoMLNrEeaN8dt_m1uJRw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="testQuestions.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;testQuestions.html&quot; partName=&quot;testQuestions.html&quot; title=&quot;testQuestions.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/testQuestions.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/testQuestions.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;94&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;6414&quot; selectionTopPixel=&quot;1932&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
@@ -489,27 +375,21 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_NxjRALOOEeaN8dt_m1uJRw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="dashboard.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;dashboard.html&quot; partName=&quot;dashboard.html&quot; title=&quot;dashboard.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;23&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2535&quot; selectionTopPixel=&quot;680&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;dashboard.html&quot; partName=&quot;dashboard.html&quot; title=&quot;dashboard.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/dashboard.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1875&quot; selectionTopPixel=&quot;643&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_l9og4LOWEeaN8dt_m1uJRw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="myTests.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;myTests.html&quot; partName=&quot;myTests.html&quot; title=&quot;myTests.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;567&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1815&quot; selectionTopPixel=&quot;508&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;myTests.html&quot; partName=&quot;myTests.html&quot; title=&quot;myTests.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/myTests.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1815&quot; selectionTopPixel=&quot;510&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_8WMw0LQDEeaUPLOcUy5Xwg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="exam.html" iconURI="platform:/plugin/org.eclipse.wst.html.ui/icons/full/obj16/sourceEditor.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;exam.html&quot; partName=&quot;exam.html&quot; title=&quot;exam.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/exam.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/exam.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2246&quot; selectionTopPixel=&quot;613&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.wst.html.core.htmlsource.source&quot; name=&quot;exam.html&quot; partName=&quot;exam.html&quot; title=&quot;exam.html&quot; tooltip=&quot;SSDI_Project_TARA/src/main/resources/static/exam.html&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/resources/static/exam.html&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;627&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2255&quot; selectionTopPixel=&quot;653&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.wst.html.core.htmlsource.source</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_UER0ELQiEeaUPLOcUy5Xwg" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Test.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Test.java&quot; partName=&quot;Test.java&quot; title=&quot;Test.java&quot; tooltip=&quot;SSDI_Project_TARA/src/main/java/com/tara/entity/Test.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/SSDI_Project_TARA/src/main/java/com/tara/entity/Test.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1891&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
       </children>
@@ -792,8 +672,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_Va6_87LWEeaCDaMSUkesgg" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -843,7 +721,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_Va7AEbLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.ProblemsView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xA;&lt;expanded>&#xA;&lt;category IMemento.internal.id=&quot;Warnings (1 item)&quot;/>&#xA;&lt;/expanded>&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;105&quot; org.eclipse.ui.ide.markerType=&quot;437&quot; org.eclipse.ui.ide.pathField=&quot;140&quot; org.eclipse.ui.ide.resourceField=&quot;105&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;350&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;105&quot; org.eclipse.ui.ide.markerType=&quot;437&quot; org.eclipse.ui.ide.pathField=&quot;140&quot; org.eclipse.ui.ide.resourceField=&quot;105&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;350&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_Va7AErLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.views.ProblemView">
@@ -1128,13 +1006,13 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Va7AibLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_NWAWULQDEeaUPLOcUy5Xwg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_VlTq3LLWEeaCDaMSUkesgg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7lDDQLRcEeazXdqRBxWeAQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_VlTq3LLWEeaCDaMSUkesgg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Va7AlrLWEeaCDaMSUkesgg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_Va7Al7LWEeaCDaMSUkesgg" elementId="additions" toBeRendered="false"/>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_Va7AzbLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
+      <children xsi:type="menu:ToolBar" xmi:id="_Va7AzbLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Va7A17LWEeaCDaMSUkesgg" elementId="org.eclipse.debug.ui.launchActionSet">
@@ -1155,7 +1033,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Va7A7bLWEeaCDaMSUkesgg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_NWFO0LQDEeaUPLOcUy5Xwg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_VlFobLLWEeaCDaMSUkesgg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_7lIi0LRcEeazXdqRBxWeAQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_VlFobLLWEeaCDaMSUkesgg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Va7A97LWEeaCDaMSUkesgg" elementId="org.eclipse.jst.pagedesigner.PageDesignerEditor" visible="false">
         <tags>Draggable</tags>

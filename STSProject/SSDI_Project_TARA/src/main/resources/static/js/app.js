@@ -298,7 +298,24 @@ app.controller('positions', function($scope,$http,$rootScope){
 		var res = $http.delete('http://localhost:8080/positions/'+tempId);
 		res.success(function(data, status, headers, config) {
 			$scope.message = data;
-			alert( "Position Deleted: Refresh and login to view");
+			alert( "Position Deleted");
+			$http.get('http://localhost:8080/positions')
+			  .success(function(response){
+			    //$scope.students=response.students;
+				  console.log("Successful re query");
+				  $scope.pos=[];
+				 data=JSON.stringify(response);
+				 var jsonObj=JSON.parse(data);
+				 //$scope.pos=jsonObj;
+				 angular.forEach(jsonObj,function(item){
+					 $scope.pos.push(item);
+					 console.log(item);
+				 });
+				 for(i=0;i<jsonObj.length;i++){
+					 console.log($scope.pos[i].id);
+				 }
+				 
+			  });
 		});
 		res.error(function(data, status, headers, config) {
 			alert( "failure message: " + JSON.stringify({data: data}));
@@ -324,7 +341,25 @@ app.controller('positions', function($scope,$http,$rootScope){
 	  		var res = $http.put('http://localhost:8080/applications', dataJsonObj);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
-				alert( "Applied Succesfully: Refresh and login to view");
+				alert( "Applied Succesfully");
+				
+				$http.get('http://localhost:8080/applications')
+				  .success(function(response){
+				    //$scope.students=response.students;
+					 data=JSON.stringify(response);
+					 var jsonObj=JSON.parse(data);
+					 $scope.app=jsonObj;
+					 for(i=0;i<jsonObj.length;i++){
+						 if($scope.app[i].ninerId==$rootScope.userNinerId){
+							 $rootScope.applied.push($scope.app[i].posId);
+						 }
+					 }
+					 
+				  });
+				
+				
+				
+				
 				
 			});
 			res.error(function(data, status, headers, config) {
@@ -362,6 +397,24 @@ app.controller('createPos',function($scope, $http, $rootScope, $location, $cooki
 				res.success(function(data, status, headers, config) {
 					$scope.message = data;
 					alert( "Position Added: Refresh and login to view");
+					$http.get('http://localhost:8080/positions')
+					  .success(function(response){
+					    //$scope.students=response.students;
+						  console.log("Successful re query");
+						  $scope.pos=[];
+						 data=JSON.stringify(response);
+						 var jsonObj=JSON.parse(data);
+						 //$scope.pos=jsonObj;
+						 angular.forEach(jsonObj,function(item){
+							 $scope.pos.push(item);
+							 console.log(item);
+						 });
+						 for(i=0;i<jsonObj.length;i++){
+							 console.log($scope.pos[i].id);
+						 }
+						 
+					  });
+					
 					
 				});
 				res.error(function(data, status, headers, config) {
@@ -423,7 +476,7 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 	  		var res = $http.put('http://localhost:8080/testtakers', dataJsonObj);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
-				alert( "Request Sent: Refresh and login to view");
+				alert( "Request Sent");
 				
 			});
 			res.error(function(data, status, headers, config) {
@@ -453,7 +506,9 @@ app.controller('test', function($scope,$http,$rootScope){
 	$scope.correctAns;
 	$scope.result;
 	$rootScope.score=0;
-	  console.log($scope.result);
+	$scope.pos= [];
+	
+	
 	$http.get('http://localhost:8080/test')
 	  .success(function(response){
 	    //$scope.students=response.students;
@@ -492,6 +547,23 @@ app.controller('test', function($scope,$http,$rootScope){
 				res.success(function(data, status, headers, config) {
 					$scope.message = data;
 					alert( "Question Added: Refresh and login to view");
+					$http.get('http://localhost:8080/test')
+					  .success(function(response){
+					    //$scope.students=response.students;
+						  console.log("Successful re query");
+						  $scope.pos=[];
+						 data=JSON.stringify(response);
+						 var jsonObj=JSON.parse(data);
+						 //$scope.pos=jsonObj;
+						 angular.forEach(jsonObj,function(item){
+							 $scope.pos.push(item);
+							 console.log(item);
+						 });
+						 for(i=0;i<jsonObj.length;i++){
+							 console.log($scope.pos[i].id);
+						 }
+						 
+					  });
 					
 				});
 				res.error(function(data, status, headers, config) {
@@ -509,24 +581,84 @@ app.controller('test', function($scope,$http,$rootScope){
 		  var res = $http.delete('http://localhost:8080/test/'+tempId);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
-				alert( "Question Deleted: Refresh and login to view");
+				alert( "Question Deleted");
+				$http.get('http://localhost:8080/test')
+				  .success(function(response){
+				    //$scope.students=response.students;
+					  console.log("Successful re query");
+					  $scope.pos=[];
+					 data=JSON.stringify(response);
+					 var jsonObj=JSON.parse(data);
+					 //$scope.pos=jsonObj;
+					 angular.forEach(jsonObj,function(item){
+						 $scope.pos.push(item);
+						 console.log(item);
+					 });
+					 for(i=0;i<jsonObj.length;i++){
+						 console.log($scope.pos[i].id);
+					 }
+					 
+				  });
 			});
 			res.error(function(data, status, headers, config) {
 				alert( "failure message: " + JSON.stringify({data: data}));
 			});	
 	  };
+	  
+	  
+	  
+	  $rootScope.applied=[];
+		$http.get('http://localhost:8080/applications')
+		  .success(function(response){
+		    //$scope.students=response.students;
+			 data=JSON.stringify(response);
+			 var jsonObj=JSON.parse(data);
+			 $scope.app=jsonObj;
+			 for(i=0;i<jsonObj.length;i++){
+				 if($scope.app[i].ninerId==$rootScope.userNinerId){
+					 $rootScope.applied.push($scope.app[i].posId);
+				 }
+			 }
+			 
+		  });
+	  
+	  
+	  
+	  
+	  $rootScope.questionStatus=[];
 	  console.log($scope.result);
-	  $scope.validate=function(value,correctAns,status){
-		  console.log("validating:",value);
-		  console.log("Result and correct Ans: ",value,correctAns);
+	  $scope.validate=function(value,correctAns, questionId){
+		  console.log("question: " + questionId);
+		  $rootScope.questionStatus.push(questionId);
+		  console.log("question array length: " + $rootScope.questionStatus.length);
+		  
+		  
 		  
 		  if(value==correctAns){
 			  $rootScope.score++;
 			  console.log("In validate, socre: ",$rootScope.score);
+			  
 		  }
+		  
+		  /*for(qItem in $scope.pos){
+			  console.log("outsode if: question is : " + qItem.id);
+			  if(qItem.id == q.id){
+				  qItem.status = 1;
+				  console.log("inside if changing status for q: " + qItem.id);
+			  }
+		  }*/
 		  status=1;
 		  console.log("Status:",status);
 	  };
+	  
+	  $scope.checkQuestion=function(qId){
+		  var i;
+		  for(i=0;i<$rootScope.questionStatus.length;i++){
+			  if($rootScope.questionStatus[i]==qId){
+				  return true;
+			  }  
+		  }
+	  }
 	
 });
 
