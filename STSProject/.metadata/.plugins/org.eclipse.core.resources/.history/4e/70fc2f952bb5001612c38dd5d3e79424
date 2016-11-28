@@ -1,0 +1,28 @@
+package com.tara.service;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.tara.entity.Student;
+
+public class TestStudentService {
+	
+	@Autowired
+    private StudentService studentService;
+ 
+    //Add WebApplicationContext field here.
+ 
+    //The setUp() method is omitted.
+	@Test
+	public void testValidGetStudentById() throws Exception {
+		boolean condition = false;
+		Student r = studentService.findByninerId(3);
+		if (r.getninerId() == 1)
+			condition = true;
+		assertTrue(condition);
+	}
+
+	
+}

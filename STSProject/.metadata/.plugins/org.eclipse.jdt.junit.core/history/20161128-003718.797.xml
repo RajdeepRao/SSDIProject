@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestStudentService" project="SSDI_Project_TARA" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.tara.service.TestStudentService" time="0.08">
+    <testcase name="testValidGetStudentById" classname="com.tara.service.TestStudentService" time="0.073"/>
+    <testcase name="testInValidGetStudentById" classname="com.tara.service.TestStudentService" time="0.007"/>
+  </testsuite>
+</testrun>
