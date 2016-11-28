@@ -41,6 +41,7 @@
 	        <div class="panel-body"><b>Position id</b>: {{a.posId}}</div>
 	        <div class="panel-body"><b>Student Name</b>: {{a.firstName}} {{a.lastName}}</div>
 	        <div class="panel-body"><b>Student EmailId</b>: {{a.emailId}}</div>
+	        <div class="panel-body" ng-if="checkScore(a.id)!=-1"><b>Score</b>: {{checkScore(a.id)}}</div>
 	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-click="">View Resume</button></div>
 	        <div class="panel-body"><button id="apply" type="button" class="btn btn-primary btn-lg btn-block" ng-show="!check(a.ninerId)" ng-click="sendTest(a.firstName,a.posId,a.subject,username)">Send Test Invite</button></div>
 	    	</div> 

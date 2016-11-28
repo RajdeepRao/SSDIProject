@@ -449,18 +449,49 @@ app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cook
 });
 
 app.controller('receivedApplications', function($scope,$http,$rootScope){
+	var jsonObject;
+	var scoreArray=[];
+	$http.get('http://localhost:8080/score')
+	  .success(function(response){
+	    //$scope.students=response.students;
+		 data=JSON.stringify(response);
+		 jsonObject=JSON.parse(data);
+		 $scope.student=jsonObject;});
+	
 	$http.get('http://localhost:8080/applications')
 	  .success(function(response){
 	    //$scope.students=response.students;
 		 data=JSON.stringify(response);
 		 var jsonObj=JSON.parse(data);
 		 $scope.apps=jsonObj;
-		 
+		 var i,j;
 		 for(i=0;i<jsonObj.length;i++){
-			 console.log($scope.apps[i].id);
+			 console.log("Display applications:",$scope.apps[i].id);
+			 
+			 
+				 for(j=0;j<jsonObject.length;j++){
+					 console.log("Inside 2nd loop (Score)",$scope.student[j].id);
+					 console.log("Inside 2nd loop (Score)-compare ninerID: ",$scope.apps[i].ninerId);
+					 
+					 if($scope.student[j].ninerId == $scope.apps[i].ninerId && $scope.student[j].posId == $scope.apps[i].posId){
+						 scoreArray.push($scope.student[j].score);
+						 
+						 console.log("Score val is: ",$scope.student[j].score);
+					 }
+					 else{
+						 scoreArray.push(-1);
+					 }
+				 }
+				 
+				 
 		 }
 		 
+		
 	  });
+	
+	$scope.checkScore=function(id){
+		 return scoreArray[id-1];
+	}
 	
 	$scope.sendTest=function(firstName,posId,subject,username){
 		var dataObj = {
@@ -491,7 +522,6 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 	  alert( "The answer is :"+ ans);
   };
 
-	
 });
 
 app.controller('test', function($scope,$http,$rootScope){
@@ -659,7 +689,28 @@ app.controller('test', function($scope,$http,$rootScope){
 			  }  
 		  }
 	  }
-	
+	$scope.submitScore=function(score){
+		
+		var dataObj = {
+			  	studentName : $rootScope.username,
+			  	posId : $rootScope.testSubj,
+				subject : $rootScope.subjectTest,
+				score : score,
+			  	ninerId : $rootScope.userNinerId
+		};	
+	  dataObjString=JSON.stringify(dataObj);
+	  var dataJsonObj=JSON.parse(dataObjString);
+		
+	  		var res = $http.put('http://localhost:8080/score', dataJsonObj);
+			res.success(function(data, status, headers, config) {
+				$scope.message = data;
+				alert( "Test Submitted Successfully. Professor will get in touch shortly");
+				
+			});
+			res.error(function(data, status, headers, config) {
+				alert( "failure message: " + JSON.stringify({data: data}));
+			});
+	}
 });
 
 app.controller('testtakers', function($scope,$http,$rootScope){
@@ -679,8 +730,9 @@ app.controller('testtakers', function($scope,$http,$rootScope){
 		 
 	  });
 	
-	$scope.takeTest=function(tempId,posId){
+	$scope.takeTest=function(tempId,posId,subject){
 		$rootScope.testSubj=posId;
+		$rootScope.subjectTest=subject;
 		console.log("Position ID: ",$rootScope.testSubj);
 		var res = $http.delete('http://localhost:8080/testtakers/'+tempId);
 		res.success(function(data, status, headers, config) {
