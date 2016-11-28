@@ -450,7 +450,6 @@ app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cook
 
 app.controller('receivedApplications', function($scope,$http,$rootScope){
 	var jsonObject;
-	var flag;
 	var scoreArray=[];
 	$http.get('http://localhost:8080/score')
 	  .success(function(response){

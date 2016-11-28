@@ -450,7 +450,6 @@ app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cook
 
 app.controller('receivedApplications', function($scope,$http,$rootScope){
 	var jsonObject;
-	var flag;
 	var scoreArray=[];
 	$http.get('http://localhost:8080/score')
 	  .success(function(response){
@@ -468,32 +467,31 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 		 var i,j;
 		 for(i=0;i<jsonObj.length;i++){
 			 console.log("Display applications:",$scope.apps[i].id);
-			 flag=false;
-			 	 
+			 
+			 
 				 for(j=0;j<jsonObject.length;j++){
 					 console.log("Inside 2nd loop (Score)",$scope.student[j].id);
 					 console.log("Inside 2nd loop (Score)-compare ninerID: ",$scope.apps[i].ninerId);
 					 
 					 if($scope.student[j].ninerId == $scope.apps[i].ninerId && $scope.student[j].posId == $scope.apps[i].posId){
 						 scoreArray.push($scope.student[j].score);
-						 flag=true;
+						 
 						 console.log("Score val is: ",$scope.student[j].score);
 					 }
-					 
-				 }
-				 if(flag!=true){
+					 else{
 						 scoreArray.push(-1);
+					 }
 				 }
 				 
 				 
 		 }
-	
-			for(i=0;i<scoreArray.length;i++){
-				console.log("Score ARRAY: ",scoreArray[i]);
-			}
+		 
 		
 	  });
-	
+	var i;
+	for(i=0;i<scoreArray.length;i++){
+		console.log("Score ARRAY: ",scoreArray[i]);
+	}
 	$scope.checkScore=function(id){
 		 return scoreArray[id-1];
 	}

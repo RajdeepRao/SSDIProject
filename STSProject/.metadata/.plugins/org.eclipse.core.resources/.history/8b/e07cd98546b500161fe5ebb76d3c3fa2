@@ -450,7 +450,6 @@ app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cook
 
 app.controller('receivedApplications', function($scope,$http,$rootScope){
 	var jsonObject;
-	var flag;
 	var scoreArray=[];
 	$http.get('http://localhost:8080/score')
 	  .success(function(response){
@@ -468,8 +467,8 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 		 var i,j;
 		 for(i=0;i<jsonObj.length;i++){
 			 console.log("Display applications:",$scope.apps[i].id);
-			 flag=false;
-			 	 
+			 
+			 	 var flag=false;
 				 for(j=0;j<jsonObject.length;j++){
 					 console.log("Inside 2nd loop (Score)",$scope.student[j].id);
 					 console.log("Inside 2nd loop (Score)-compare ninerID: ",$scope.apps[i].ninerId);
