@@ -4,10 +4,17 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.tara.service.StudentService;
+
 
 @Entity
 public class Professor {
-
+	
+	
 	@GeneratedValue
 	private int id;
 	@Id
