@@ -43,11 +43,7 @@ public class StudentServiceTest {
 		String emailId="sgajera@gmail.com";
 		String password="xyz";
 		int ninerId=800902445;
-		Student student1 = new Student(id, firstName, lastName, emailId, password, ninerId);
-		studentservice.createStudent(student1);
-		Student student2 = studentservice.findById(7);
-		assert(student1.equals(student2));
-
+		
 	}
 
 	@Test
