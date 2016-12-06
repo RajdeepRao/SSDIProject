@@ -43,7 +43,7 @@ public class StudentServiceTest {
 		String emailId="sgajera@gmail.com";
 		String password="xyz";
 		int ninerId=800902445;
-		
+
 	}
 
 	@Test

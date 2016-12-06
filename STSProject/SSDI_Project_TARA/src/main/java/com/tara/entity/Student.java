@@ -80,6 +80,10 @@ public class Student {
 		int result = 1;
 		result = prime * result + ((emailId == null) ? 0 : emailId.hashCode());
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
+<<<<<<< HEAD
+=======
+		result = prime * result + id;
+>>>>>>> d939ae88ee64b7763137e80bd27f9efd48625921
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ninerId;
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
