@@ -1,0 +1,41 @@
+package com.tara.dao;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.tara.SsdiProjectTaraApplication;
+import com.tara.entity.Student;
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = SsdiProjectTaraApplication.class)
+public class TestStudentDAO{
+	
+	@Autowired
+    private StudentDAO studentdao;
+ 
+    //Add WebApplicationContext field here.
+ 
+    //The setUp() method is omitted.
+	@Test
+	public void testValidfindByninerId() throws Exception {
+		boolean condition = false;
+		Student s = studentdao.findByninerId(0);
+		if (s.getninerId() == 0)
+			condition = true;
+		assertTrue(condition);
+	}
+	
+	@Test
+	public void testInValidfindByninerId() throws Exception {
+		boolean condition = false;
+		
+		if (studentdao.findByninerId(10)== null)
+			condition = true;
+		assertTrue(condition);
+	}
+	
+}

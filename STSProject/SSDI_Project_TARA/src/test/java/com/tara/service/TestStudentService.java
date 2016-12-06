@@ -23,8 +23,8 @@ public class TestStudentService {
 	@Test
 	public void testValidGetStudentById() throws Exception {
 		boolean condition = false;
-		Student s = studentService.findByninerId(0);
-		if (s.getninerId() == 0)
+		Student s = studentService.findByninerId(13);
+		if (s.getninerId() == 13)
 			condition = true;
 		assertTrue(condition);
 	}

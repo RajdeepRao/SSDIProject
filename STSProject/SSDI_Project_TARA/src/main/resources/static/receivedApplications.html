@@ -35,7 +35,7 @@
    <div class="container">
 	<div ng-controller="receivedApplications" class="row" >
 	    
-	    <div class="col-md-4" ng-repeat-start="a in apps" ng-if="a.instructor==username">	        
+	    <div class="col-md-4" ng-repeat-start="a in listReceivedApplications" >	        
 			<div class="panel panel-primary" >
 	        <div class="panel-heading"><b>{{a.subject}}</b></div>
 	        <div class="panel-body"><b>Position id</b>: {{a.posId}}</div>
@@ -47,9 +47,7 @@
 	    	</div> 
 		</div>
 		<div class="clearfix" ng-if="$index%3==2"></div>
-		<div ng-repeat-end=""></div>
-	    
-	    
+		<div ng-repeat-end=""></div> 
 	 </div>
 	</div>
 	

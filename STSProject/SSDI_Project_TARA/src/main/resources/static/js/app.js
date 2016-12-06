@@ -204,6 +204,7 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookieSt
 	  		var res = $http.put('http://localhost:8080/students', dataJsonObj);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
+				getElementById('signUpModalSubmit').modal('hide');
 				$scope.myUrl = $location.path('/dashboard');
 				
 				
@@ -222,6 +223,7 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookieSt
 			console.log($scope.ninerNumber);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
+				getElementById('signUpModalSubmit').modal('hide');
 				$scope.myUrl = $location.path('/dashboardProf');
 				
 			});
@@ -243,7 +245,7 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookieSt
 
 });
 
-app.controller('SignOut', function($scope,$rootScope,$location){
+app.controller('SignOut', function($scope,$rootScope,$cookieStore,$location){
 	$scope.signout=function(){
 		console.log($rootScope.logIn);
 		$rootScope.logIn=false;
@@ -450,11 +452,11 @@ app.controller('fileUpload',function($scope, $http, $rootScope, $location, $cook
 
 app.controller('receivedApplications', function($scope,$http,$rootScope){
 	var jsonObject;
-	var flag;
 	var scoreArray=[];
 	$http.get('http://localhost:8080/score')
 	  .success(function(response){
 	    //$scope.students=response.students;
+		  console.log("Enterning jsonObject init");
 		 data=JSON.stringify(response);
 		 jsonObject=JSON.parse(data);
 		 $scope.student=jsonObject;});
@@ -465,9 +467,14 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 		 data=JSON.stringify(response);
 		 var jsonObj=JSON.parse(data);
 		 $scope.apps=jsonObj;
+		 $scope.listReceivedApplications=[]
 		 var i,j;
 		 for(i=0;i<jsonObj.length;i++){
 			 console.log("Display applications:",$scope.apps[i].id);
+			 if($scope.apps[i].instructor==$rootScope.username){
+				 $scope.listReceivedApplications.push($scope.apps[i]);
+			 }
+			 console.log("Recieved Application Matched:",$rootScope.username,$scope.listReceivedApplications);
 			 flag=false;
 			 	 
 				 for(j=0;j<jsonObject.length;j++){
@@ -487,6 +494,7 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 				 
 				 
 		 }
+		 
 	
 			for(i=0;i<scoreArray.length;i++){
 				console.log("Score ARRAY: ",scoreArray[i]);

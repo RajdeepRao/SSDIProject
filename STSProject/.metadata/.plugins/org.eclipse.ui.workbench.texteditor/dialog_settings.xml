@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="applied" key="selection"/>
+		<item value="myModal" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="myModal"/>
+			<item value="$rootScope"/>
+			<item value="$rootScope.p"/>
+			<item value="rootScope.usern"/>
+			<item value="rootScope.user"/>
+			<item value="userninerId"/>
 			<item value="applied"/>
 			<item value="apply"/>
-			<item value="testtaker"/>
-			<item value="$rootscope"/>
-			<item value="#loginModal"/>
-			<item value="LogIn"/>
-			<item value="logIn"/>
-			<item value="img"/>
 		</list>
 		<list key="replacehistory">
 		</list>

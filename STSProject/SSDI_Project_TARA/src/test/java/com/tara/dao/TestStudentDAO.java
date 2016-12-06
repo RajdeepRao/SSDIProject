@@ -23,8 +23,8 @@ public class TestStudentDAO{
 	@Test
 	public void testValidfindByninerId() throws Exception {
 		boolean condition = false;
-		Student s = studentdao.findByninerId(0);
-		if (s.getninerId() == 0)
+		Student s = studentdao.findByninerId(13);
+		if (s.getninerId() == 13)
 			condition = true;
 		assertTrue(condition);
 	}
