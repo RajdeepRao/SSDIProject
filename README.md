@@ -34,3 +34,12 @@ The   University/Department   can   keep   track   of   the   positions   and   
 administrative tasks associated with this hiring. 
 
 ## INSTRUCTIONS
+0. Download and install JDK
+1. Download and install Spring Tool Suite
+2. Download/git clone the project and open in Spring Tool Suite
+3. Install Maven for dependancy resolution
+4. Download, install and run Xampp/MySQL
+5. Create database using - "CREATE DATABASE SSDIBACKEND;"
+6. Configure database properties in /ssdi-project/src/main/resources/application.properties
+7. Run the application as Spring Boot App
+8. Goto Localhost:8080 in your browser.
