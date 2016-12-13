@@ -471,7 +471,6 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 		 jsonObj=JSON.parse(data);
 		 $scope.apps=jsonObj;
 		 $scope.listReceivedApplications=[]
-		 $scope.listReceivedApplications2=[]
 		 var i,j;
 		 for(i=0;i<jsonObj.length;i++){
 			 console.log("Display applications:",$scope.apps[i].id);

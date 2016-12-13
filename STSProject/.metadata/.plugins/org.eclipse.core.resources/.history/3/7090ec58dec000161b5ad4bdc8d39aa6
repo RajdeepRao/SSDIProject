@@ -471,15 +471,11 @@ app.controller('receivedApplications', function($scope,$http,$rootScope){
 		 jsonObj=JSON.parse(data);
 		 $scope.apps=jsonObj;
 		 $scope.listReceivedApplications=[]
-		 $scope.listReceivedApplications2=[]
 		 var i,j;
 		 for(i=0;i<jsonObj.length;i++){
 			 console.log("Display applications:",$scope.apps[i].id);
-			 if($scope.apps[i].instructor==$rootScope.username){
-				 $scope.listReceivedApplications.push($scope.apps[i]);
-			 }
 			 if($scope.apps[i].firstName==$rootScope.username){
-				 $scope.listReceivedApplications2.push($scope.apps[i]);
+				 $scope.listReceivedApplications.push($scope.apps[i]);
 			 }
 			 console.log("Recieved Application Matched:",$rootScope.username,$scope.listReceivedApplications);
 			 flag=false;

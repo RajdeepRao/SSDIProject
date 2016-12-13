@@ -35,7 +35,7 @@
    <div class="container">
 	<div ng-controller="receivedApplications" class="row" >
 	    
-	    <div class="col-md-4" ng-repeat-start="a in listReceivedApplications2" ng-if="a.firstName==username">	        
+	    <div class="col-md-4" ng-repeat-start="a in listReceivedApplications" ng-if="a.firstName==username">	        
 			<div class="panel panel-primary" >
 	        <div class="panel-heading"><b>{{a.subject}}</b></div>
 	        <div class="panel-body"><b>Position id</b>: {{a.posId}}</div>
