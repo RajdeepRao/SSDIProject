@@ -1,3 +1,4 @@
+mkdir bin
 # COMPILE JAVA SOURCE CODE
 javac -cp ".:./ext/lucene-analyzers-common-6.2.1.jar:./ext/lucene-core-6.2.1.jar:./ext/lucene-queryparser-6.2.1.jar" ./src/org/myorg/ResumeMatcher/*.java -d bin -Xlint
 
