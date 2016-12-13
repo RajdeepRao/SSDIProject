@@ -16,7 +16,7 @@ between the Professors, University and Students.
 We   intend   to   create   a   platform   to   be   used   by   the   Students   to   find   opportunities,   by   the  
 Professors to scout talent and the university to manage resources. 
  
-Student 
+Student
 Each   Student   will   create   a   profile.   The   student   profile   will   have   his   entire   information  
 (personal,   professional,   academic,   skills,   opportunities   he   is   looking   for   etc).   The   student   can  
 browse   TA   and   RA   positions   postings   (open   and   archived   both).   The   student   can   apply   for  
