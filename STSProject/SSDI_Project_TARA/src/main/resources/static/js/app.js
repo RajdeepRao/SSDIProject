@@ -199,13 +199,14 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookieSt
 	  dataObjString=JSON.stringify(dataObj);
 	  var dataJsonObj=JSON.parse(dataObjString);
 		
-	  	if($scope.role=="Student" || $scope.role=="student" ){
+	  	if($scope.role=="Student"){
 	  		
 	  		var res = $http.put('http://localhost:8080/students', dataJsonObj);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
-				getElementById('signUpModalSubmit').modal('hide');
+				alert('Sign Up successful');
 				$scope.myUrl = $location.path('/dashboard');
+				getElementById('signUpModalSubmit').modal('hide');
 				
 				
 			});
@@ -217,14 +218,16 @@ app.controller('SignUp',function($scope, $http, $rootScope, $location, $cookieSt
 			$rootScope.logIn=$cookieStore.get('logInStatus');
 
 	  	}
-	  	else if($scope.role=="Professor"|| $scope.role=="professor"){
+	  	else if($scope.role=="Professor"){
 	  		
 	  		var res = $http.put('http://localhost:8080/professors', dataJsonObj);
 			console.log($scope.ninerNumber);
 			res.success(function(data, status, headers, config) {
 				$scope.message = data;
-				getElementById('signUpModalSubmit').modal('hide');
+				alert('Sign Up successful');
 				$scope.myUrl = $location.path('/dashboardProf');
+				getElementById('signUpModalSubmit').modal('hide');
+				
 				
 			});
 			res.error(function(data, status, headers, config) {

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="TestStudentDAO" project="SSDI_Project_TARA" tests="2" started="2" failures="0" errors="0" ignored="0">
-  <testsuite name="com.tara.dao.TestStudentDAO" time="0.135">
-    <testcase name="testInValidfindByninerId" classname="com.tara.dao.TestStudentDAO" time="0.076"/>
-    <testcase name="testValidfindByninerId" classname="com.tara.dao.TestStudentDAO" time="0.059"/>
-  </testsuite>
-</testrun>
