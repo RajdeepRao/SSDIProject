@@ -1,0 +1,47 @@
+package com.tara.service;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.tara.SsdiProjectTaraApplication;
+import com.tara.entity.Professor;
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = SsdiProjectTaraApplication.class)
+public class TestProfessorService {
+	
+	@Autowired
+    private ProfessorService professorService;
+
+	
+	@Test
+	public void testFindByninerId() {
+		boolean condition = false;
+		Professor p = professorService.findByninerId(82);
+		if (p.getninerId() == 82)
+			condition = true;
+		assertTrue(condition);
+	}
+
+	@Test
+	public void testCreateProfessor() {
+		boolean condition = false;
+		Professor professor = new Professor();
+		professor.setFirstName("ProfTestFname");
+		professor.setLastName("ProfTestLname");
+		professor.setEmailId("testemail@abc.com");
+		professor.setninerId(83);
+		professor.setPassword("testpassword");
+		professorService.createProfessor(professor);
+		Professor response = professorService.findByninerId(83);
+		if (response.getninerId()==83)
+			condition = true;
+		assertTrue(condition);
+
+	}
+
+}
